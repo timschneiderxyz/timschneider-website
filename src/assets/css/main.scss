@@ -1,0 +1,23 @@
+/*  ========================================================================
+    # Main SCSS
+    ========================================================================  */
+
+// Charset
+@charset 'UTF-8';
+
+// Globals
+@import '01-globals/fonts';
+@import '01-globals/resets';
+@import '01-globals/generic';
+
+// Components
+@import 'tailwindcss/components';
+@import '02-components/header';
+@import '02-components/footer';
+
+// Pages
+@import '03-pages/home';
+@import '03-pages/404';
+
+// Utilities
+@import 'tailwindcss/utilities';

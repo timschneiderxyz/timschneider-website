@@ -1,0 +1,18 @@
+/*  ========================================================================
+    # Globals - Generic
+    ========================================================================  */
+
+body {
+  background-color: #ffffff;
+  font-family: Rubik, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #000000;
+  color: #ffffff;
+  text-shadow: none;
+}

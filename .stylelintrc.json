@@ -1,0 +1,25 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "scss/at-function-pattern": "^[a-z0-9-_]+$",
+    "scss/at-mixin-pattern": "^[a-z0-9-_]+$",
+    "scss/dollar-variable-pattern": "^[a-z0-9-_]+$",
+    "at-rule-name-space-after": "always",
+    "block-closing-brace-newline-before": "always",
+    "block-opening-brace-newline-after": "always",
+    "color-function-notation": null,
+    "color-hex-length": "long",
+    "color-named": "never",
+    "declaration-empty-line-before": null,
+    "font-weight-notation": "numeric",
+    "max-nesting-depth": 5,
+    "no-descending-specificity": null,
+    "selector-class-pattern": "^[a-z0-9-_]+$",
+    "selector-id-pattern": "^[a-z0-9-_]+$",
+    "selector-max-compound-selectors": 5,
+    "selector-max-id": 0,
+    "selector-max-specificity": "0,5,0",
+    "string-quotes": "single",
+    "unit-disallowed-list": "em"
+  }
+}

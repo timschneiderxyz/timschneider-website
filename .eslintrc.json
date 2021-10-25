@@ -1,0 +1,54 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": ["prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "webpack": {
+        "config": ".webpack/webpack.base.js"
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": 2,
+    "block-scoped-var": 2,
+    "eqeqeq": 2,
+    "func-names": 2,
+    "guard-for-in": 2,
+    "no-bitwise": 2,
+    "no-caller": 2,
+    "no-console": 1,
+    "no-eq-null": 2,
+    "no-lonely-if": 2,
+    "no-nested-ternary": 2,
+    "no-return-assign": 2,
+    "no-self-compare": 2,
+    "no-throw-literal": 2,
+    "no-unneeded-ternary": 2,
+    "no-use-before-define": 2,
+    "no-var": 2,
+    "no-void": 2,
+    "object-shorthand": 2,
+    "operator-assignment": 2,
+    "prefer-arrow-callback": 2,
+    "prefer-const": 2,
+    "radix": 2,
+    "spaced-comment": 2
+  }
+}

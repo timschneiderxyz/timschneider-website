@@ -1,0 +1,20 @@
+# Visual Studio Code
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# Dependencies
+node_modules/
+vendor/
+
+# Distribution
+dist/
+
+# DotEnv
+.env*
+
+# Miscellaneous
+.idea/*
+.DS_Store
+Thumbs.db
