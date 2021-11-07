@@ -2,8 +2,8 @@
     # Webpack - Config
     ========================================================================  */
 
-const path = require('path');
 require('dotenv').config();
+const path = require('path');
 
 module.exports = {
   urls: {
@@ -29,7 +29,7 @@ module.exports = {
   },
 
   entries: {
-    app: ['@/App.jsx', '@assets/css/main.scss']
+    app: ['@/index.jsx', '@assets/css/main.scss']
   },
 
   copy: [
