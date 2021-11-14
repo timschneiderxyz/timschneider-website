@@ -11,7 +11,6 @@ module.exports = {
     prod: process.env.URL_PROD || 'https://timschneider.xyz/',
     publicPath: ''
   },
-
   devServer: {
     host: process.env.DEVSERVER_HOST || 'localhost',
     port: parseInt(process.env.DEVSERVER_PORT, 10) || 8080,
@@ -19,7 +18,6 @@ module.exports = {
     poll: !!process.env.DEVSERVER_POLL || false,
     content: path.resolve(__dirname, process.env.DEVSERVER_CONTENT || 'src')
   },
-
   alias: {
     '@': path.resolve(__dirname, 'src'),
     '@assets': path.resolve(__dirname, 'src/assets'),
@@ -27,11 +25,9 @@ module.exports = {
     '@pages': path.resolve(__dirname, 'src/pages'),
     '@utils': path.resolve(__dirname, 'src/utils')
   },
-
   entries: {
     app: ['@/index.jsx', '@assets/css/main.scss']
   },
-
   copy: [
     // Favicons
     {

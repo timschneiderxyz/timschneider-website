@@ -22,9 +22,7 @@ module.exports = {
     },
     // Extend
     extend: {
-      colors: {
-        test: '#000000'
-      }
+      colors: {}
     }
   },
   variants: {},
