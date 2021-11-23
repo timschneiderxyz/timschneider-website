@@ -2,7 +2,7 @@
     # Webpack - Modules - Copy Plugin
     ========================================================================  */
 
-const cfg = require('../../webpack.config.js');
+const cfg = require('../../webpack.config');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = () => {

@@ -6,12 +6,12 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 // Config
-const cfg = require('../webpack.config.js');
+const cfg = require('../webpack.config');
 
 // Dependencies
 const { merge } = require('webpack-merge');
 const { getWebpackModules } = require('./get-webpack-modules');
-const base = require('./webpack.base.js');
+const base = require('./webpack.base');
 
 module.exports = merge(
   base,

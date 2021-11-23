@@ -18,10 +18,8 @@ exports.getWebpackModules = (...names) => {
   let config = {};
 
   names.forEach((name) => {
-    config = merge(config, require(path.join(pathModules, `${name}.js`))());
+    config = merge(config, require(path.join(pathModules, name))());
   });
 
   return config;
 };
-
-

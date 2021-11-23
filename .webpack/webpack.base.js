@@ -4,7 +4,7 @@
 
 // Configs
 const pkg = require('../package.json');
-const cfg = require('../webpack.config.js');
+const cfg = require('../webpack.config');
 
 // Node
 const path = require('path');
