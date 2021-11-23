@@ -26,7 +26,7 @@ module.exports = {
     '@utils': path.resolve(__dirname, 'src/utils')
   },
   entries: {
-    app: ['@/index.jsx', '@assets/css/main.scss']
+    app: ['@/index.tsx', '@assets/css/main.scss']
   },
   copy: [
     // Favicons

@@ -1,5 +1,6 @@
 {
   "root": true,
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module"
@@ -8,18 +9,16 @@
     "browser": true,
     "node": true
   },
-  "plugins": ["prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "extends": [
     "eslint:recommended",
     "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "prettier"
   ],
   "settings": {
     "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      },
       "webpack": {
         "config": ".webpack/webpack.base.js"
       }
@@ -27,6 +26,7 @@
   },
   "rules": {
     "prettier/prettier": 2,
+    "@typescript-eslint/no-var-requires": 0,
     "block-scoped-var": 2,
     "eqeqeq": 2,
     "func-names": 2,

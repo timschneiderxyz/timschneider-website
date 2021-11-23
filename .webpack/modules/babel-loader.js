@@ -7,7 +7,7 @@ module.exports = () => {
     module: {
       rules: [
         {
-          test: /\.jsx?$/,
+          test: /\.(js|ts)x?$/,
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
@@ -24,7 +24,14 @@ module.exports = () => {
                     useBuiltIns: 'usage'
                   }
                 ],
-                '@babel/react'
+                [
+                  '@babel/preset-typescript',
+                  {
+                    allExtensions: true,
+                    isTSX: true
+                  }
+                ],
+                '@babel/preset-react'
               ],
               plugins: ['@babel/plugin-syntax-dynamic-import', '@babel/plugin-transform-runtime']
             }
