@@ -24,8 +24,8 @@ module.exports = {
       colors: {
         'tim-white': '#f8f8f8',
         'tim-gray': '#8e9ba8',
-        'tim-black-1': '#060606',
-        'tim-black-2': '#0f1012',
+        'tim-black': '#060606',
+        'tim-coal': '#0f1012',
         'tim-primary': '#e67066'
       }
     }
