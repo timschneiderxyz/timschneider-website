@@ -1,0 +1,21 @@
+/* TEAM */
+
+Author:        Tim Schneider
+Website:       timschneider.xyz
+E-Mail:        timschneider.xyz@gmail.com
+Twitter:       @RanzigeButter
+Location:      Germany
+
+
+/* SITE */
+
+Language:      English, German
+Built on:      Windows 11
+IDE:           VS Code
+Tools:         Webpack, SCSS, TailwindCSS, Babel, TypeScript, React
+Standards:     HTML5, CSS3, ES6
+
+
+/* THANKS */
+
+Name:          Katharina Spies

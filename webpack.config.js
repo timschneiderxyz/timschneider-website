@@ -29,6 +29,18 @@ module.exports = {
     app: ['@/index.tsx', '@assets/css/main.scss']
   },
   copy: [
+    // robots.txt
+    {
+      from: './src/robots.txt',
+      to: './robots.txt',
+      noErrorOnMissing: true
+    },
+    // humans.txt
+    {
+      from: './src/humans.txt',
+      to: './humans.txt',
+      noErrorOnMissing: true
+    },
     // Favicons
     {
       from: './src/assets/images/favicons',
