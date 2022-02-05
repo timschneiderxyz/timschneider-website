@@ -1,4 +1,3 @@
 Sitemap: https://timschneider.xyz/sitemap.xml
 
 User-agent: *
-Disallow: /.env
