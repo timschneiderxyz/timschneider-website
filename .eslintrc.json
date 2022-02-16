@@ -9,7 +9,10 @@
     "browser": true,
     "node": true
   },
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:import/recommended",
@@ -38,6 +41,7 @@
     "no-return-assign": 2,
     "no-self-compare": 2,
     "no-throw-literal": 2,
+    "no-undef": 0,
     "no-unneeded-ternary": 2,
     "no-use-before-define": 2,
     "no-var": 2,
