@@ -5,10 +5,7 @@
 // Regular
 @font-face {
   font-family: Rubik;
-  src:
-    local('Rubik'),
-    url('../fonts/rubik-v11--regular.woff2') format('woff2'),
-    url('../fonts/rubik-v11--regular.woff') format('woff');
+  src: url('../fonts/rubik-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -17,10 +14,7 @@
 // Italic
 @font-face {
   font-family: Rubik;
-  src:
-    local('Rubik'),
-    url('../fonts/rubik-v11--italic.woff2') format('woff2'),
-    url('../fonts/rubik-v11--italic.woff') format('woff');
+  src: url('../fonts/rubik-italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -29,10 +23,7 @@
 // 700
 @font-face {
   font-family: Rubik;
-  src:
-    local('Rubik'),
-    url('../fonts/rubik-v11--700.woff2') format('woff2'),
-    url('../fonts/rubik-v11--700.woff') format('woff');
+  src: url('../fonts/rubik-700.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;

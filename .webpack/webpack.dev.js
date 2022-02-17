@@ -37,7 +37,7 @@ module.exports = merge(
         }
       },
       hot: true,
-      open: true
+      open: false
     }
   },
   getWebpackModules(
