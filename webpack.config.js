@@ -8,7 +8,7 @@ const path = require('path');
 module.exports = {
   urls: {
     dev: process.env.URL_DEV || 'http://localhost:8080/',
-    prod: process.env.URL_PROD || 'https://timschneider.xyz/',
+    prod: process.env.URL_PROD || '/',
     publicPath: ''
   },
   devServer: {
