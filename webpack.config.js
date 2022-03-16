@@ -29,16 +29,22 @@ module.exports = {
     app: ['@/index.tsx', '@assets/css/main.scss']
   },
   copy: [
+    // Redirects
+    {
+      from: './src/_redirects',
+      to: './',
+      noErrorOnMissing: true
+    },
     // robots.txt
     {
       from: './src/robots.txt',
-      to: './robots.txt',
+      to: './',
       noErrorOnMissing: true
     },
     // humans.txt
     {
       from: './src/humans.txt',
-      to: './humans.txt',
+      to: './',
       noErrorOnMissing: true
     },
     // Favicons

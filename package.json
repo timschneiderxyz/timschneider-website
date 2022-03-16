@@ -75,8 +75,9 @@
     "webpack": "^5.64.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^4.5.0",
-    "webpack-manifest-plugin": "^4.0.2",
-    "webpack-merge": "^5.7.3"
+    "webpack-manifest-plugin": "^5.0.0",
+    "webpack-merge": "^5.7.3",
+    "wrangler": "^0.0.19"
   },
   "dependencies": {
     "core-js": "^3.19.0",
