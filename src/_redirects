@@ -1,4 +1,0 @@
-/scripts/win-setup https://raw.githubusercontent.com/RanzigeButter/dotfiles/master/win-setup.ps1 301
-/scripts/win-copy https://raw.githubusercontent.com/RanzigeButter/dotfiles/master/win-copy.ps1 301
-/scripts/wsl-setup https://raw.githubusercontent.com/RanzigeButter/dotfiles/master/wsl-setup.sh 301
-/scripts/wsl-copy https://raw.githubusercontent.com/RanzigeButter/dotfiles/master/wsl-copy.sh 301

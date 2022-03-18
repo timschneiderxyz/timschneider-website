@@ -1,10 +1,9 @@
 /*  ========================================================================
-    # API - GitHub
+    # Functions - API - GitHub
     ========================================================================  */
 
 /**
  *
- * @returns
  */
 export async function onRequest({ env }) {
   const response = await fetch('https://api.github.com/graphql', {
@@ -16,26 +15,26 @@ export async function onRequest({ env }) {
     },
     body: JSON.stringify({
       query: `{
-          user(login: "${env.GITHUB_USERNAME}") {
-            pinnedItems(first: 6, types: REPOSITORY) {
-              nodes {
-                ... on Repository {
+        user(login: "${env.GITHUB_USERNAME}") {
+          pinnedItems(first: 6, types: REPOSITORY) {
+            nodes {
+              ... on Repository {
+                name
+                description
+                primaryLanguage {
                   name
-                  description
-                  primaryLanguage {
-                    name
-                    color
-                  }
-                  stargazers {
-                    totalCount
-                  }
-                  forkCount
-                  url
+                  color
                 }
+                stargazers {
+                  totalCount
+                }
+                forkCount
+                url
               }
             }
           }
-        }`
+        }
+      }`
     })
   });
 

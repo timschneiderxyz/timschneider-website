@@ -23,31 +23,18 @@ module.exports = {
     '@assets': path.resolve(__dirname, 'src/assets'),
     '@components': path.resolve(__dirname, 'src/components'),
     '@pages': path.resolve(__dirname, 'src/pages'),
+    '@hooks': path.resolve(__dirname, 'src/hooks'),
     '@utils': path.resolve(__dirname, 'src/utils')
   },
   entries: {
     app: ['@/index.tsx', '@assets/css/main.scss']
   },
   copy: [
-    // Redirects
     {
-      from: './src/_redirects',
+      from: './static',
       to: './',
       noErrorOnMissing: true
     },
-    // robots.txt
-    {
-      from: './src/robots.txt',
-      to: './',
-      noErrorOnMissing: true
-    },
-    // humans.txt
-    {
-      from: './src/humans.txt',
-      to: './',
-      noErrorOnMissing: true
-    },
-    // Favicons
     {
       from: './src/assets/images/favicons',
       to: './images/favicons',

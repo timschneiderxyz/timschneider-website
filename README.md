@@ -1,6 +1,6 @@
 # timschneider.xyz
 
-My personal website build with React and Webpack.
+Personal website build with React & Webpack.
 
 ## License
 
