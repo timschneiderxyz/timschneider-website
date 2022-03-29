@@ -22,8 +22,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'tim-gray': '#8e9ba8',
         'tim-black': '#060606',
+        'tim-gray': '#8e9ba8',
         'tim-coal': '#0f1012',
         'tim-primary': '#e67066'
       }
