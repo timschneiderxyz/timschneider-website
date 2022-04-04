@@ -3,7 +3,7 @@
     ========================================================================  */
 
 /**
- *
+ * Returns the pinned Repositories from the GitHub GraphQL API.
  */
 export async function onRequest({ env }) {
   const response = await fetch('https://api.github.com/graphql', {
