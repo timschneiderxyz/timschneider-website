@@ -8,7 +8,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header className='c-header'>
-      <div></div>
+      <div className='container flex justify-between w-[90%] mx-auto py-10'></div>
     </header>
   );
 };
