@@ -1,26 +1,21 @@
 /*  ========================================================================
-    # Tailwind CSS
+    # Tailwind CSS - Config
     ========================================================================  */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   corePlugins: {
-    preflight: false
+    preflight: false,
+    container: false
   },
   plugins: [],
   theme: {
-    fontFamily: {
-      sans: ['Rubik', 'Arial', 'sans-serif'],
-      serif: ['Georgia', 'Times New Roman', 'serif'],
-      mono: ['Consolas', 'Monaco', 'Ubuntu Mono', 'monospace']
-    },
-    screens: {
-      sm: '576px',
-      md: '768px',
-      lg: '992px',
-      xl: '1200px'
-    },
     extend: {
+      fontFamily: {
+        sans: ['Rubik', ...defaultTheme.fontFamily.sans]
+      },
       colors: {
         'tim-black': '#060606',
         'tim-gray': '#8e9ba8',

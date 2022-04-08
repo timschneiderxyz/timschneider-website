@@ -13,7 +13,7 @@ import Xing from '@assets/images/svg/social/xing.svg';
 const Footer = () => {
   return (
     <footer className='c-footer'>
-      <div className='container flex justify-between w-[90%] mx-auto py-10'>
+      <div className='container flex justify-between py-10'>
         <span className='text-sm font-bold'>© 2022 Tim Schneider</span>
 
         <div className='flex gap-8'>
