@@ -5,7 +5,7 @@
 // Dependencies
 import React from 'react';
 
-// SVGs
+// Assets
 import GitHub from '@assets/images/svg/social/github.svg';
 import Twitter from '@assets/images/svg/social/twitter.svg';
 import Xing from '@assets/images/svg/social/xing.svg';
@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className='c-footer'>
       <div className='container flex justify-between py-10'>
-        <span className='text-sm font-bold'>© 2022 Tim Schneider</span>
+        <span className='text-sm'>© 2022 Tim Schneider</span>
 
         <div className='flex gap-8'>
           <a
