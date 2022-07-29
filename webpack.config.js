@@ -7,13 +7,13 @@ const path = require('path');
 
 module.exports = {
   urls: {
-    dev: process.env.URL_DEV || 'http://localhost:8080/',
+    dev: process.env.URL_DEV || 'http://localhost:8000/',
     prod: process.env.URL_PROD || '/',
     publicPath: ''
   },
   devServer: {
     host: process.env.DEVSERVER_HOST || 'localhost',
-    port: parseInt(process.env.DEVSERVER_PORT, 10) || 8080,
+    port: parseInt(process.env.DEVSERVER_PORT, 10) || 8000,
     https: !!process.env.DEVSERVER_HTTPS || false,
     poll: !!process.env.DEVSERVER_POLL || false,
     content: path.resolve(__dirname, process.env.DEVSERVER_CONTENT || 'src')
@@ -38,6 +38,11 @@ module.exports = {
     {
       from: './src/assets/images/favicons',
       to: './images/favicons',
+      noErrorOnMissing: true
+    },
+    {
+      from: './src/assets/images/misc',
+      to: './images/misc',
       noErrorOnMissing: true
     }
   ]

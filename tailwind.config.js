@@ -12,15 +12,17 @@ module.exports = {
   },
   plugins: [],
   theme: {
+    fontFamily: {
+      sans: ['Rubik', ...defaultTheme.fontFamily.sans],
+      serif: [...defaultTheme.fontFamily.serif],
+      mono: [...defaultTheme.fontFamily.mono]
+    },
     extend: {
-      fontFamily: {
-        sans: ['Rubik', ...defaultTheme.fontFamily.sans]
-      },
       colors: {
         'tim-black': '#060606',
-        'tim-gray': '#8e9ba8',
         'tim-coal': '#0f1012',
-        'tim-primary': '#e67066'
+        'tim-gray': '#8e9ba8',
+        'tim-primary': '#f8484e'
       }
     }
   }
