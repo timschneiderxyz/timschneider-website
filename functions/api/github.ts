@@ -5,11 +5,11 @@
 /**
  * Returns the pinned Repositories from the GitHub GraphQL API.
  */
-export async function onRequest({ env }) {
+export async function onRequestGet({ env }) {
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
-      'User-Agent': 'Homepage',
+      'User-Agent': 'Personal Website',
       Authorization: `Bearer ${env.GITHUB_API_TOKEN}`,
       'Content-Type': 'application/json'
     },
@@ -39,5 +39,10 @@ export async function onRequest({ env }) {
   });
 
   const data = await response.json();
-  return new Response(JSON.stringify(data.data.user.pinnedItems.nodes));
+  return new Response(JSON.stringify(data.data.user.pinnedItems.nodes), {
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
+    }
+  });
 }

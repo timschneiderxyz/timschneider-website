@@ -1,22 +1,23 @@
 {
   "name": "timschneider.xyz",
-  "description": "Tim Schneider's personal website.",
+  "description": "Tims personal website.",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "author": {
     "name": "Tim Schneider",
-    "twitter": "@RanzigeButter",
+    "twitter": "@timschneiderxyz",
     "email": "timschneider.xyz@gmail.com",
     "url": "https://timschneider.xyz"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:RanzigeButter/timschneider.xyz.git"
+    "url": "git@github.com:timschneiderxyz/timschneider.xyz.git"
   },
   "scripts": {
     "dev": "nodemon",
-    "prod": "webpack --config .webpack/webpack.prod.js --progress"
+    "prod": "webpack --config .webpack/webpack.prod.js --progress",
+    "wrangler": "wrangler pages dev ."
   },
   "browserslist": [
     "last 2 Chrome versions",
