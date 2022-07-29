@@ -3,7 +3,7 @@
 Author:        Tim Schneider
 Website:       timschneider.xyz
 E-Mail:        timschneider.xyz@gmail.com
-Twitter:       @RanzigeButter
+Twitter:       @timschneiderxyz
 Location:      Germany
 
 
@@ -12,7 +12,7 @@ Location:      Germany
 Language:      English, German
 Built on:      Windows 11
 IDE:           VS Code
-Tools:         Webpack, SCSS, TailwindCSS, Babel, TypeScript, React
+Tools:         Webpack, SCSS, TailwindCSS, TypeScript, React
 Standards:     HTML5, CSS3, ES6
 
 
