@@ -5,13 +5,18 @@
 // Dependencies
 import React from 'react';
 
+// Components
+import Section from '@components/Section';
+
 const Home = () => {
   return (
     <main className='p-home'>
-      <section className='container flex flex-col justify-center items-center h-screen text-center'>
-        <h1 className='mb-4 text-6xl sm:text-8xl font-bold text-white'>W.I.P.</h1>
-        <p className='text-lg'>Currently working on a new website.</p>
-      </section>
+      <Section id='intro'>
+        <div className='text-center'>
+          <h1 className='mb-4'>W.I.P.</h1>
+          <p>Currently working on a new website.</p>
+        </div>
+      </Section>
     </main>
   );
 };

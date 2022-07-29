@@ -6,6 +6,28 @@
   display: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-white;
+}
+
+h1,
+h2 {
+  @apply text-4xl md:text-5xl;
+}
+
+p {
+  @apply text-lg;
+
+  a {
+    @apply font-bold text-white;
+  }
+}
+
 .container {
   max-width: 1400px;
   width: 90%;
