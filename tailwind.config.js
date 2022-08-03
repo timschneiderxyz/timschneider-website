@@ -23,6 +23,9 @@ module.exports = {
         'tim-coal': '#0f1012',
         'tim-gray': '#8e9ba8',
         'tim-primary': '#f8484e'
+      },
+      listStyleType: {
+        square: 'square'
       }
     }
   }
