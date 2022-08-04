@@ -10,10 +10,10 @@ import useGitHub from '@hooks/useGitHub';
 
 // Components
 import Section from '@components/Section';
-import RepoCard from '@components/RepoCard';
+import { RepoCard, RepoCardSkeleton } from '@components/RepoCard';
 
 const Home = () => {
-  const { loadingRepos, repos } = useGitHub();
+  const { loadingRepos, errorLoadingRepos, repos } = useGitHub();
 
   return (
     <main className='p-home'>
@@ -25,15 +25,14 @@ const Home = () => {
       </Section>
 
       <Section id='repos'>
-        {loadingRepos ? (
-          <h2 className='text-center'>Loading repositories...</h2>
-        ) : (
-          <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 lg:gap-y-8 max-w-5xl mx-auto'>
-            {repos.map((repo, index) => (
-              <RepoCard key={index} repo={repo} />
-            ))}
-          </div>
-        )}
+        <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 lg:gap-y-8 max-w-5xl mx-auto'>
+          {loadingRepos
+            ? [...Array(6)].map((value, index) => <RepoCardSkeleton key={index} />)
+            : repos.map(repo => <RepoCard key={repo.name} repo={repo} />)}
+        </div>
+        {errorLoadingRepos ? (
+          <h3 className='text-center'>An error occurred while loading repositories.</h3>
+        ) : null}
       </Section>
     </main>
   );

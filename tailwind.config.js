@@ -26,6 +26,16 @@ module.exports = {
       },
       listStyleType: {
         square: 'square'
+      },
+      keyframes: {
+        'skeleton-loader': {
+          '0%': {
+            transform: 'translateX(-100%)'
+          },
+          '100%': {
+            transform: 'translateX(100%)'
+          }
+        }
       }
     }
   }
