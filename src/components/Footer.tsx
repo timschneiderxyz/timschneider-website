@@ -19,18 +19,19 @@ const Footer = () => {
   return (
     <footer>
       <div className='container flex justify-between py-10'>
-        <span
-          className='text-sm cursor-pointer transition-colors hover:text-white'
+        <button
+          className='p-0 bg-transparent border-none text-sm cursor-pointer transition-colors hover:text-white'
           onClick={() => setModalIsOpen(true)}
         >
           © 2022 Tim Schneider
-        </span>
+        </button>
 
         <div className='flex gap-8'>
           <a
             className='group'
             href='https://github.com/timschneiderxyz'
-            aria-label='link to github'
+            title='Link to GitHub Profile'
+            aria-label='Link to GitHub Profile'
             target='_blank'
             rel='noreferrer noopener'
           >
@@ -39,7 +40,8 @@ const Footer = () => {
           <a
             className='group'
             href='https://twitter.com/timschneiderxyz'
-            aria-label='link to twitter'
+            title='Link to Twitter Profile'
+            aria-label='Link to Twitter Profile'
             target='_blank'
             rel='noreferrer noopener'
           >
@@ -48,7 +50,8 @@ const Footer = () => {
           <a
             className='group'
             href='https://www.xing.com/profile/tim_schneider328'
-            aria-label='link to xing'
+            title='Link to Xing Profile'
+            aria-label='Link to Xing Profile'
             target='_blank'
             rel='noreferrer noopener'
           >

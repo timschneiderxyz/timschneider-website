@@ -1,5 +1,5 @@
 {
-  "name": "timschneider.xyz",
+  "name": "timschneider-website",
   "description": "Tims personal website.",
   "version": "1.0.0",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:timschneiderxyz/timschneider.xyz.git"
+    "url": "git@github.com:timschneiderxyz/timschneider-website.git"
   },
   "scripts": {
     "dev": "nodemon",
@@ -70,7 +70,6 @@
     "style-loader": "^3.2.1",
     "stylelint": "^14.0.1",
     "stylelint-config-standard-scss": "^5.0.0",
-    "tailwindcss": "^3.0.0",
     "terser-webpack-plugin": "^5.1.1",
     "typescript": "^4.5.2",
     "webpack": "^5.64.2",
@@ -84,8 +83,8 @@
     "core-js": "^3.19.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.0.1",
-    "regenerator-runtime": "^0.13.7"
+    "regenerator-runtime": "^0.13.7",
+    "tailwindcss": "^3.0.0"
   }
 }
