@@ -13,7 +13,7 @@ interface SectionProps {
 
 const Section = ({ id, children }: SectionProps) => {
   return (
-    <section id={id} className='py-10 lg:py-16'>
+    <section id={id} className='py-16 lg:py-20'>
       <div className='container'>{children}</div>
     </section>
   );

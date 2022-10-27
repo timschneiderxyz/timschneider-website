@@ -31,6 +31,17 @@ const Home = () => {
             <h2>About me</h2>
           </div>
           <div>
+            <p className='mb-12'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A suscipit fugit quae
+              deleniti beatae possimus odio eaque cum! Ipsam, magnam earum odit distinctio
+              blanditiis perspiciatis ducimus consequuntur sint voluptates magni. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. A suscipit fugit quae deleniti beatae possimus
+              odio eaque cum! Ipsam, magnam earum odit distinctio blanditiis perspiciatis ducimus
+              consequuntur sint voluptates magni. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. A suscipit fugit quae deleniti beatae possimus odio eaque cum! Ipsam, magnam
+              earum odit distinctio blanditiis perspiciatis ducimus consequuntur sint voluptates
+              magni.
+            </p>
             <List
               title='Tools & Technologies'
               items={[

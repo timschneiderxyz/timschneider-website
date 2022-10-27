@@ -29,7 +29,7 @@ interface RepoCardProps {
 export const RepoCard = ({ repo }: RepoCardProps) => {
   return (
     <a
-      className='group flex flex-col p-6 bg-tim-coal rounded-xl transition-transform hover:scale-105 active:scale-95'
+      className='group flex flex-col p-6 bg-tim-coal rounded-xl transition-transform lg:hover:scale-105 lg:active:scale-95'
       href={repo.url}
       target='_blank'
       rel='noreferrer noopener'
