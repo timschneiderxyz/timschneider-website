@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "nodenext",
+    "target": "esnext",
     "allowJs": true,
     "resolveJsonModule": true,
     "jsx": "preserve",
     "strict": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
     "esModuleInterop": true,
     "isolatedModules": true,
     "importHelpers": true,
