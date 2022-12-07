@@ -78,7 +78,7 @@ const Home = () => {
             : repos.map(repo => <RepoCard key={repo.name} repo={repo} />)}
         </div>
         {errorLoadingRepos ? (
-          <h3 className='text-center'>An error occurred while loading repositories.</h3>
+          <h2 className='text-2xl text-center'>An error occurred while loading repositories.</h2>
         ) : null}
       </Section>
 

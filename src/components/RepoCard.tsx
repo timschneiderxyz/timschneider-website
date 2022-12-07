@@ -6,6 +6,8 @@
 import React from 'react';
 
 // Assets
+import IconFolder from '@assets/images/svg/ui/folder.svg';
+import IconArrowTopRightOnSquare from '@assets/images/svg/ui/arrow-top-right-on-square.svg';
 import IconStar from '@assets/images/svg/ui/star.svg';
 import IconForked from '@assets/images/svg/ui/forked.svg';
 
@@ -29,12 +31,16 @@ interface RepoCardProps {
 export const RepoCard = ({ repo }: RepoCardProps) => {
   return (
     <a
-      className='group flex flex-col p-6 bg-tim-coal rounded-xl transition-transform lg:hover:scale-105 lg:active:scale-95'
+      className='group flex flex-col p-6 bg-tim-coal rounded-xl transition-transform duration-300 lg:hover:scale-105'
       href={repo.url}
       target='_blank'
       rel='noreferrer noopener'
     >
-      <h3 className='mb-2 text-lg'>{repo.name}</h3>
+      <div className='flex justify-between items-center mb-5'>
+        <IconFolder className='w-6 h-6 fill-tim-gray' />
+        <IconArrowTopRightOnSquare className='w-4 h-4 fill-tim-gray transition-all duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
+      </div>
+      <h3 className='mb-2 text-lg break-all'>{repo.name}</h3>
       <p className='grow text-base'>{repo.description}</p>
       <div className='flex gap-5 mt-5'>
         {repo.primaryLanguage?.name && repo.primaryLanguage?.color ? (
@@ -42,7 +48,7 @@ export const RepoCard = ({ repo }: RepoCardProps) => {
             <span
               className='w-4 h-4 mr-1 rounded-full border border-solid border-tim-black/20'
               style={{ backgroundColor: repo.primaryLanguage.color }}
-            ></span>
+            />
             <span className='text-white'>{repo.primaryLanguage.name}</span>
           </div>
         ) : null}
