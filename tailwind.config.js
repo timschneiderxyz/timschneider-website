@@ -29,12 +29,9 @@ module.exports = {
     extend: {
       colors: {
         'tim-black': '#060606',
-        'tim-coal': '#0f1012',
-        'tim-gray': '#8e9ba8',
+        'tim-coal': '#0d0e10',
+        'tim-gray': '#808CA0',
         'tim-primary': '#f8484e'
-      },
-      listStyleType: {
-        square: 'square'
       },
       keyframes: {
         'skeleton-loader': {
