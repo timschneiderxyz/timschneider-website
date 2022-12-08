@@ -10,7 +10,7 @@ import useGitHub from '@hooks/useGitHub';
 
 // Components
 import Section from '@components/Section';
-// import List from '@components/List';
+import List from '@components/List';
 import { RepoCard, RepoCardSkeleton } from '@components/RepoCard';
 
 const Home = () => {
@@ -18,30 +18,30 @@ const Home = () => {
 
   return (
     <main className='p-home'>
-      <Section id='intro'>
-        <div className='text-center'>
-          <h1 className='mb-4'>W.I.P.</h1>
-          <p>Currently working on a new website.</p>
-        </div>
-      </Section>
-
-      {/* <Section id='about'>
+      <Section id='about'>
         <div className='grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-20'>
           <div>
-            <h2>About me</h2>
+            <figure className='max-w-xs lg:max-w-none mx-auto rotate-3 aspect-square'>
+              <img
+                className='w-full h-full rounded-2xl object-cover'
+                src='/images/misc/tim.jpg'
+                alt='A picture of Tim.'
+              />
+            </figure>
           </div>
           <div>
-            <p className='mb-12'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A suscipit fugit quae
-              deleniti beatae possimus odio eaque cum! Ipsam, magnam earum odit distinctio
-              blanditiis perspiciatis ducimus consequuntur sint voluptates magni. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. A suscipit fugit quae deleniti beatae possimus
-              odio eaque cum! Ipsam, magnam earum odit distinctio blanditiis perspiciatis ducimus
-              consequuntur sint voluptates magni. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. A suscipit fugit quae deleniti beatae possimus odio eaque cum! Ipsam, magnam
-              earum odit distinctio blanditiis perspiciatis ducimus consequuntur sint voluptates
-              magni.
-            </p>
+            <div className='text-block'>
+              <h1>Hey there, I’m Tim.</h1>
+              <p>
+                I’m a developer who enjoys creating high-quality websites and tinkering with server
+                stuff. My interest in everything that has to do with technologies and development
+                goes back to my childhood. Since then I’ve been experimenting with all sorts of
+                computer-related topics. To achieve my goals I’m constantly striving to improve my
+                skills and keep up-to-date with new methods and technologies.
+              </p>
+              <p>In my pastime I like to do photography or play a video game to unwind.</p>
+              <p>Here is my tech stack that I’m currently working with:</p>
+            </div>
             <List
               title='Tools & Technologies'
               items={[
@@ -69,7 +69,7 @@ const Home = () => {
             />
           </div>
         </div>
-      </Section> */}
+      </Section>
 
       <Section id='repos'>
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 lg:gap-y-8 max-w-5xl mx-auto'>
@@ -82,11 +82,11 @@ const Home = () => {
         ) : null}
       </Section>
 
-      {/* <Section id='cta'>
+      <Section id='cta'>
         <div className='flex flex-col justify-center items-center h-[420px] md:h-[600px] p-6 bg-tim-coal rounded-xl text-center'>
-          <h2>Contact me</h2>
+          <h2>W.I.P.</h2>
         </div>
-      </Section> */}
+      </Section>
     </main>
   );
 };
