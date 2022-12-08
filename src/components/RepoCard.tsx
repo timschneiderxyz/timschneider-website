@@ -37,11 +37,11 @@ export const RepoCard = ({ repo }: RepoCardProps) => {
       rel='noreferrer noopener'
     >
       <div className='flex justify-between items-center mb-5'>
-        <IconFolder className='w-6 h-6 fill-tim-gray' />
+        <IconFolder className='w-7 h-7 fill-tim-gray' />
         <IconArrowTopRightOnSquare className='w-4 h-4 fill-tim-gray transition-all duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
       </div>
-      <h3 className='mb-2 text-lg break-all'>{repo.name}</h3>
-      <p className='grow text-base'>{repo.description}</p>
+      <h3 className='mb-2'>{repo.name}</h3>
+      <p className='grow'>{repo.description}</p>
       <div className='flex gap-5 mt-5'>
         {repo.primaryLanguage?.name && repo.primaryLanguage?.color ? (
           <div className='flex items-end text-sm leading-none'>

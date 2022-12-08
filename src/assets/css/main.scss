@@ -6,10 +6,11 @@
 @charset 'UTF-8';
 
 // Globals
+@import 'tailwindcss/base';
 @import '01-globals/fonts';
 @import '01-globals/resets';
 @import '01-globals/generic';
-@import 'tailwindcss/base';
+@import '01-globals/typography';
 
 // Components
 @import 'tailwindcss/components';

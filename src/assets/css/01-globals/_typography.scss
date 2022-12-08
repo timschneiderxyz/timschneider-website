@@ -1,0 +1,54 @@
+/*  ========================================================================
+    # Globals - Typography
+    ========================================================================  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-medium text-white break-words;
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+.text-block {
+  h1 {
+    @apply mb-8;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mt-8 mb-4;
+  }
+
+  p {
+    @apply text-lg;
+
+    &:not(:last-child) {
+      @apply mb-4;
+    }
+
+    a {
+      @apply font-medium text-white;
+
+      &:hover {
+        @apply underline;
+      }
+    }
+  }
+}
