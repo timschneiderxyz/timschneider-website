@@ -16,11 +16,21 @@ h1 {
 }
 
 h2 {
-  @apply text-3xl;
+  @apply text-2xl sm:text-3xl;
 }
 
 h3 {
   @apply text-xl;
+}
+
+p {
+  a {
+    @apply font-medium text-tim-primary;
+
+    &:hover {
+      @apply underline;
+    }
+  }
 }
 
 .text-block {
@@ -37,18 +47,8 @@ h3 {
   }
 
   p {
-    @apply text-lg;
-
     &:not(:last-child) {
       @apply mb-4;
-    }
-
-    a {
-      @apply font-medium text-white;
-
-      &:hover {
-        @apply underline;
-      }
     }
   }
 }

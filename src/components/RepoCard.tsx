@@ -41,7 +41,7 @@ export const RepoCard = ({ repo }: RepoCardProps) => {
         <IconArrowTopRightOnSquare className='w-4 h-4 fill-tim-gray transition-all duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
       </div>
       <h3 className='mb-2'>{repo.name}</h3>
-      <p className='grow'>{repo.description}</p>
+      <p className='grow text-base'>{repo.description}</p>
       <div className='flex gap-5 mt-5'>
         {repo.primaryLanguage?.name && repo.primaryLanguage?.color ? (
           <div className='flex items-end text-sm leading-none'>
