@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from '@/App';
 
 // Init App
-createRoot(document.getElementById('__root') as HTMLElement).render(
+createRoot(document.getElementById('__root') as HTMLDivElement).render(
   <StrictMode>
     <BrowserRouter>
       <App />

@@ -84,7 +84,10 @@ const Home = () => {
 
       <Section id='cta'>
         <div className='flex flex-col justify-center items-center h-[420px] md:h-[600px] p-6 bg-tim-coal rounded-xl text-center'>
-          <h2>W.I.P.</h2>
+          <h2 className='mb-4'>Like to get in touch?</h2>
+          <p>
+            Then feel free to <a href='mailto:timschneider.xyz@gmail.com'>send me an email</a>.
+          </p>
         </div>
       </Section>
     </main>
