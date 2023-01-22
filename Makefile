@@ -1,10 +1,10 @@
 .PHONY: dev prod clean
 
 dev:
-	npm run dev
+	pnpm run dev
 prod:
-	npm run prod
+	pnpm run prod
 clean:
-	rm -f package-lock.json
+	rm -f pnpm-lock.yaml
 	rm -rf node_modules/
 	rm -rf dist/
