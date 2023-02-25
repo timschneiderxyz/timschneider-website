@@ -14,7 +14,7 @@ const { merge } = require('webpack-merge');
  * @returns {{}}
  */
 exports.getWebpackModules = (...names) => {
-  const pathModules = path.resolve(process.cwd(), '.webpack/modules');
+  const pathModules = path.resolve(process.cwd(), 'webpack/modules');
   let config = {};
 
   names.forEach((name) => {

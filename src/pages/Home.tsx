@@ -32,15 +32,9 @@ const Home = () => {
           <div>
             <div className='text-block'>
               <h1>Hey there, I’m Tim.</h1>
-              <p>
-                I’m a developer who enjoys creating high-quality websites and tinkering with server
-                stuff. My interest in everything that has to do with technologies and development
-                goes back to my childhood. Since then I’ve been experimenting with all sorts of
-                computer-related topics. To achieve my goals I’m constantly striving to improve my
-                skills and keep up-to-date with new methods and technologies.
-              </p>
-              <p>In my pastime I like to do photography or play a video game to unwind.</p>
-              <p>Here is my tech stack that I’m currently working with:</p>
+              <p>I’m a developer who enjoys creating high-quality websites and tinkering with DevOps. My interest in everything that has to do with technologies and development goes back to my childhood. To achieve my goals I’m constantly striving to improve my skills and keep up-to-date with new methods and technologies.</p>
+              <p>To unwind, I like to do photography or play a video game.</p>
+              <p>The tech stack that I’m currently working with:</p>
             </div>
             <List
               title='Tools & Technologies'

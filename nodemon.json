@@ -1,7 +1,7 @@
 {
-  "exec": "webpack serve --config .webpack/webpack.dev.js",
+  "exec": "webpack serve --config webpack/webpack.dev.js",
   "watch": [
     "webpack.config.js",
-    ".webpack/"
+    "webpack/"
   ]
 }
