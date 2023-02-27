@@ -17,7 +17,7 @@ exports.getWebpackModules = (...names) => {
   const pathModules = path.resolve(process.cwd(), 'webpack/modules');
   let config = {};
 
-  names.forEach((name) => {
+  names.forEach(name => {
     config = merge(config, require(path.join(pathModules, name))());
   });
 

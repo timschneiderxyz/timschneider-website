@@ -17,7 +17,7 @@ module.exports = merge(
   base,
   {
     output: {
-      publicPath: cfg.urls.dev,
+      publicPath: cfg.urls.dev
     },
     devtool: 'eval-source-map',
     devServer: {

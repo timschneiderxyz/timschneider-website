@@ -32,4 +32,4 @@ module.exports = {
     builtAt: true,
     timings: true
   }
-}
+};

@@ -24,10 +24,7 @@ module.exports = () => {
               loader: 'postcss-loader',
               options: {
                 postcssOptions: {
-                  plugins: [
-                    ['tailwindcss', {}],
-                    ...postcssPlugins
-                  ]
+                  plugins: [['tailwindcss', {}], ...postcssPlugins]
                 }
               }
             },
@@ -54,9 +51,7 @@ module.exports = () => {
         // Loader
         { loader: MiniCssExtractPlugin.loader },
         // PostCSS Plugins
-        [
-          ['autoprefixer', {}]
-        ]
+        [['autoprefixer', {}]]
       ),
       plugins: [
         new MiniCssExtractPlugin({
@@ -67,4 +62,4 @@ module.exports = () => {
   });
 
   return configs()[process.env.NODE_ENV];
-}
+};

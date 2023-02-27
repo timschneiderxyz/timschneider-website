@@ -28,4 +28,4 @@ module.exports = () => {
   });
 
   return configs()[process.env.NODE_ENV];
-}
+};

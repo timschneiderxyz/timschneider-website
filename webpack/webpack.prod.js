@@ -21,7 +21,7 @@ module.exports = merge(
   base,
   {
     output: {
-      publicPath: cfg.urls.prod + cfg.urls.publicPath,
+      publicPath: cfg.urls.prod + cfg.urls.publicPath
     },
     devtool: 'source-map',
     optimization: {
