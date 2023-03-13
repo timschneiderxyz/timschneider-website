@@ -12,7 +12,7 @@ module.exports = {
     publicPath: ''
   },
   devServer: {
-    host: process.env.DEVSERVER_HOST || 'localhost',
+    host: process.env.DEVSERVER_HOST || '0.0.0.0',
     port: parseInt(process.env.DEVSERVER_PORT, 10) || 8000,
     https: !!process.env.DEVSERVER_HTTPS || false,
     poll: !!process.env.DEVSERVER_POLL || false,
