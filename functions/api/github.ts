@@ -5,7 +5,7 @@
 /**
  * Returns the pinned Repositories from the GitHub GraphQL API.
  */
-export async function onRequestGet({ env }) {
+export const onRequestGet = async ({ env }) => {
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
@@ -42,7 +42,8 @@ export async function onRequestGet({ env }) {
   return new Response(JSON.stringify(data.data.user.pinnedItems.nodes), {
     headers: {
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin':
+        env.NODE_ENV === 'development' ? 'http://localhost:8000' : 'https://timschneider.xyz'
     }
   });
-}
+};

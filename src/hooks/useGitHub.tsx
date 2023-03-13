@@ -27,7 +27,11 @@ const useGitHub = () => {
 
   const getRepos = async () => {
     try {
-      const response = await fetch('https://timschneider.xyz/api/github');
+      const response = await fetch(
+        window.location.hostname === 'localhost'
+          ? 'http://localhost:8788/api/github'
+          : 'https://timschneider.xyz/api/github'
+      );
 
       if (response.status !== 200) {
         setErrorLoadingRepos(true);

@@ -12,8 +12,9 @@ vendor/
 # Distribution
 dist/
 
-# DotEnv
+# Environment
 .env*
+*wrangler.toml
 
 # Miscellaneous
 .idea/*
