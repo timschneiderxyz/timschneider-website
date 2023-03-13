@@ -1,16 +1,12 @@
-.PHONY: dev prod nuke tunnel
+.PHONY: dev prod clean
 
 dev:
-	pnpm run dev
+	npm run dev
 
 prod:
-	pnpm run prod
+	npm run prod
 
-nuke:
-	rm -f pnpm-lock.yaml
+clean:
+	rm -f package-lock.json
 	rm -rf node_modules/
 	rm -rf dist/
-	pnpm install
-
-tunnel:
-	cloudflared tunnel --protocol http2 --url localhost:8000
