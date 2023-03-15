@@ -19,7 +19,6 @@
     "selector-max-compound-selectors": 5,
     "selector-max-id": 0,
     "selector-max-specificity": "0,5,0",
-    "string-quotes": "single",
-    "unit-disallowed-list": "em"
+    "string-quotes": "single"
   }
 }

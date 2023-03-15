@@ -17,7 +17,7 @@ const Home = () => {
   const { loadingRepos, errorLoadingRepos, repos } = useGitHub();
 
   return (
-    <main className='p-home'>
+    <main>
       <Section id='about'>
         <div className='grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-20'>
           <div>
@@ -32,7 +32,12 @@ const Home = () => {
           <div>
             <div className='text-block'>
               <h1>Hey there, I’m Tim.</h1>
-              <p>I’m a developer who enjoys creating high-quality websites and tinkering with DevOps. My interest in everything that has to do with technologies and development goes back to my childhood. To achieve my goals I’m constantly striving to improve my skills and keep up-to-date with new methods and technologies.</p>
+              <p>
+                I’m a developer who enjoys creating high-quality websites and tinkering with DevOps.
+                My interest in everything that has to do with technologies and development goes back
+                to my childhood. To achieve my goals I’m constantly striving to improve my skills
+                and keep up-to-date with new methods and technologies.
+              </p>
               <p>To unwind, I like to do photography or play a video game.</p>
               <p>The tech stack that I’m currently working with:</p>
             </div>

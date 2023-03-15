@@ -10,7 +10,7 @@ import Section from '@components/Section';
 
 const FourOhFour = () => {
   return (
-    <main className='p-404'>
+    <main>
       <Section id='four-oh-four'>
         <div className='text-center'>
           <h1 className='mb-4'>404</h1>

@@ -9,9 +9,9 @@ import React, { useState } from 'react';
 import Modal from '@components/Modal';
 
 // Assets
-import IconGitHub from '@assets/images/svg/social/github.svg';
-import IconTwitter from '@assets/images/svg/social/twitter.svg';
-import IconXing from '@assets/images/svg/social/xing.svg';
+import IconGitHub from '@assets/social/github.svg';
+import IconTwitter from '@assets/social/twitter.svg';
+import IconXing from '@assets/social/xing.svg';
 
 const Footer = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);

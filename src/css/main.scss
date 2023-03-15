@@ -1,5 +1,5 @@
 /*  ========================================================================
-    # Main SCSS
+    # Main
     ========================================================================  */
 
 // Charset
@@ -7,17 +7,9 @@
 
 // Globals
 @import 'tailwindcss/base';
-@import '01-globals/fonts';
-@import '01-globals/resets';
-@import '01-globals/generic';
-@import '01-globals/typography';
-
-// Components
+@import 'fonts';
+@import 'resets';
+@import 'generic';
+@import 'typography';
 @import 'tailwindcss/components';
-
-// Pages
-@import '03-pages/home';
-@import '03-pages/404';
-
-// Utilities
 @import 'tailwindcss/utilities';

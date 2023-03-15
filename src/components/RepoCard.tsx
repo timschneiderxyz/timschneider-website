@@ -6,10 +6,10 @@
 import React from 'react';
 
 // Assets
-import IconFolder from '@assets/images/svg/ui/folder.svg';
-import IconArrowTopRightOnSquare from '@assets/images/svg/ui/arrow-top-right-on-square.svg';
-import IconStar from '@assets/images/svg/ui/star.svg';
-import IconForked from '@assets/images/svg/ui/forked.svg';
+import IconFolder from '@assets/ui/folder.svg';
+import IconArrowTopRightOnSquare from '@assets/ui/arrow-top-right-on-square.svg';
+import IconStar from '@assets/ui/star.svg';
+import IconForked from '@assets/ui/forked.svg';
 
 // Types
 interface RepoCardProps {

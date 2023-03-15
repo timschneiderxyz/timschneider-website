@@ -7,7 +7,7 @@ const path = require('path');
 
 module.exports = {
   urls: {
-    dev: process.env.URL_DEV || 'http://localhost:8000/',
+    dev: process.env.URL_DEV || '/',
     prod: process.env.URL_PROD || '/',
     publicPath: ''
   },
@@ -27,22 +27,12 @@ module.exports = {
     '@utils': path.resolve(__dirname, 'src/utils')
   },
   entries: {
-    app: ['@/index.tsx', '@assets/css/main.scss']
+    app: ['@/index.tsx', '@/css/main.scss']
   },
   copy: [
     {
       from: './static',
       to: './',
-      noErrorOnMissing: true
-    },
-    {
-      from: './src/assets/images/favicons',
-      to: './images/favicons',
-      noErrorOnMissing: true
-    },
-    {
-      from: './src/assets/images/misc',
-      to: './images/misc',
       noErrorOnMissing: true
     }
   ]
