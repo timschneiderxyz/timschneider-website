@@ -17,10 +17,11 @@
     "paths": {
       "@/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
-      "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"],
+      "@interfaces/*": ["src/interfaces/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"]
     }
   },
   "include": [

@@ -21,10 +21,11 @@ module.exports = {
   alias: {
     '@': path.resolve(__dirname, 'src'),
     '@assets': path.resolve(__dirname, 'src/assets'),
-    '@components': path.resolve(__dirname, 'src/components'),
-    '@pages': path.resolve(__dirname, 'src/pages'),
+    '@interfaces': path.resolve(__dirname, 'src/interfaces'),
     '@hooks': path.resolve(__dirname, 'src/hooks'),
-    '@utils': path.resolve(__dirname, 'src/utils')
+    '@utils': path.resolve(__dirname, 'src/utils'),
+    '@components': path.resolve(__dirname, 'src/components'),
+    '@pages': path.resolve(__dirname, 'src/pages')
   },
   entries: {
     app: ['@/index.tsx', '@/css/main.scss']

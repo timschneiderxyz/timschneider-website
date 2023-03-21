@@ -12,20 +12,9 @@ import IconStar from '@assets/ui/star.svg';
 import IconForked from '@assets/ui/forked.svg';
 
 // Types
+import type Repository from '@interfaces/Repository';
 interface RepoCardProps {
-  repo: {
-    name: string;
-    description: string;
-    primaryLanguage: {
-      name?: string;
-      color?: string;
-    };
-    stargazers: {
-      totalCount: number;
-    };
-    forkCount: number;
-    url: string;
-  };
+  repo: Repository;
 }
 
 export const RepoCard = ({ repo }: RepoCardProps) => {

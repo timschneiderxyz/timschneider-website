@@ -6,24 +6,12 @@
 import { useEffect, useState } from 'react';
 
 // Types
-interface Repo {
-  name: string;
-  description: string;
-  primaryLanguage: {
-    name?: string;
-    color?: string;
-  };
-  stargazers: {
-    totalCount: number;
-  };
-  forkCount: number;
-  url: string;
-}
+import type Repository from '@interfaces/Repository';
 
 const useGitHub = () => {
   const [loadingRepos, setLoadingRepos] = useState<boolean>(true);
   const [errorLoadingRepos, setErrorLoadingRepos] = useState<boolean>(false);
-  const [repos, setRepos] = useState<Repo[]>([]);
+  const [repos, setRepos] = useState<Repository[]>([]);
 
   const getRepos = async () => {
     try {
