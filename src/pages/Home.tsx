@@ -10,7 +10,6 @@ import useGitHub from '@hooks/useGitHub';
 
 // Components
 import Section from '@components/Section';
-import List from '@components/List';
 import { RepoCard, RepoCardSkeleton } from '@components/RepoCard';
 
 const Home = () => {
@@ -31,41 +30,39 @@ const Home = () => {
           </div>
           <div>
             <div className='text-block'>
-              <h1>Hey there, I’m Tim.</h1>
+              <h1>Hey there, I am Tim.</h1>
               <p>
-                I’m a developer who enjoys creating high-quality websites and tinkering with DevOps.
-                My interest in everything that has to do with technologies and development goes back
-                to my childhood. To achieve my goals I’m constantly striving to improve my skills
-                and keep up-to-date with new methods and technologies.
+                Already in my childhood, I had a lot of fun learning and understanding technologies
+                together with my father. Nowadays, I have turned my ever-growing passion for these
+                things into a profession and have become a developer.
               </p>
-              <p>To unwind, I like to do photography or play a video game.</p>
-              <p>The tech stack that I’m currently working with:</p>
+              <p>
+                My job is to build and optimise high-quality and user-friendly websites for my
+                clients, with whom I regularly exchange ideas to achieve the best possible results.
+                Therefore, I am constantly educating myself in order to be able to offer all
+                potential and current possibilities. I also do a lot of DevOps work to optimise and
+                automate as many processes as possible. To unwind, I like to photograph, listen to
+                music or play a video game.
+              </p>
+              <p>Here are a few of the technologies and languages I currently use:</p>
             </div>
-            <List
-              title='Tools & Technologies'
-              items={[
-                'Git',
+            <ul className='grid grid-cols-[repeat(auto-fit,200px)] gap-y-2 gap-x-12 mt-6 pl-6'>
+              {[
                 'Docker',
+                'CSS3 / SCSS',
+                'Tailwind CSS',
                 'Node.js',
+                'JavaScript / TypeScript',
                 'Webpack',
                 'React',
-                'WordPress',
-                'Tailwind CSS',
-                'Databases (SQL)',
-                'APIs (REST, GraphQL)'
-              ]}
-            />
-            <List
-              title='Languages'
-              items={[
-                'HTML5',
-                'CSS3 / SCSS',
-                'JavaScript / TypeScript',
                 'PHP',
-                'Bash',
-                'PowerShell'
-              ]}
-            />
+                'WordPress'
+              ].map((item, index) => (
+                <li key={index} className='marker:text-tim-primary'>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </Section>
