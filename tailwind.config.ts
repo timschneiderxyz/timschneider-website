@@ -2,9 +2,10 @@
     # Tailwind CSS - Config
     ========================================================================  */
 
-const defaultTheme = require('tailwindcss/defaultTheme');
+import defaultTheme from 'tailwindcss/defaultTheme';
+import type { Config } from 'tailwindcss';
 
-module.exports = {
+export default {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   corePlugins: {
     preflight: false,
@@ -28,9 +29,6 @@ module.exports = {
     // Extend the default config.
     extend: {
       colors: {
-        'tim-black': '#060606',
-        'tim-coal': '#0d0e10',
-        'tim-gray': '#808CA0',
         'tim-primary': '#f8484e'
       },
       keyframes: {
@@ -45,4 +43,4 @@ module.exports = {
       }
     }
   }
-};
+} satisfies Config;

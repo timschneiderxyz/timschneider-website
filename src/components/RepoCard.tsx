@@ -20,14 +20,14 @@ interface RepoCardProps {
 export const RepoCard = ({ repo }: RepoCardProps) => {
   return (
     <a
-      className='group flex flex-col p-6 bg-tim-coal rounded-xl transition-transform duration-300 lg:hover:scale-105'
+      className='group flex flex-col p-6 bg-zinc-950 rounded-xl transition-transform duration-300 lg:hover:scale-105'
       href={repo.url}
       target='_blank'
       rel='noreferrer noopener'
     >
       <div className='flex justify-between items-center mb-5'>
-        <IconFolder className='w-7 h-7 fill-tim-gray' />
-        <IconArrowTopRightOnSquare className='w-4 h-4 fill-tim-gray transition-all duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
+        <IconFolder className='w-7 h-7 fill-slate-400' />
+        <IconArrowTopRightOnSquare className='w-4 h-4 fill-slate-400 transition-all duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
       </div>
       <h3 className='mb-2'>{repo.name}</h3>
       <p className='grow text-base'>{repo.description}</p>
@@ -35,7 +35,7 @@ export const RepoCard = ({ repo }: RepoCardProps) => {
         {repo.primaryLanguage?.name && repo.primaryLanguage?.color ? (
           <div className='flex items-end text-sm leading-none'>
             <span
-              className='w-4 h-4 mr-1 rounded-full border border-solid border-tim-black/20'
+              className='w-4 h-4 mr-1 rounded-full border border-solid border-black/20'
               style={{ backgroundColor: repo.primaryLanguage.color }}
             />
             <span className='text-white'>{repo.primaryLanguage.name}</span>
@@ -60,15 +60,15 @@ export const RepoCard = ({ repo }: RepoCardProps) => {
 
 export const RepoCardSkeleton = () => {
   return (
-    <div className='relative flex flex-col p-6 bg-tim-coal rounded-xl overflow-hidden'>
+    <div className='relative flex flex-col p-6 bg-zinc-950 rounded-xl overflow-hidden'>
       <div className='h-5 w-8/12 mb-4 bg-white/10 rounded-md' />
-      <div className='h-20 bg-tim-gray/10 rounded-md' />
+      <div className='h-20 bg-slate-400/10 rounded-md' />
       <div className='flex gap-5 mt-6'>
         <div className='h-4 w-4/12 bg-white/10 rounded-md' />
         <div className='h-4 w-2/12 bg-white/10 rounded-md' />
         <div className='h-4 w-2/12 bg-white/10 rounded-md' />
       </div>
-      <div className='absolute inset-0 animate-[skeleton-loader_2s_infinite] bg-gradient-to-r from-transparent via-tim-gray/10 to-transparent' />
+      <div className='absolute inset-0 animate-[skeleton-loader_2s_infinite] bg-gradient-to-r from-transparent via-slate-400/10 to-transparent' />
     </div>
   );
 };

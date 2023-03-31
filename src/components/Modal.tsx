@@ -21,7 +21,7 @@ const Modal = ({ isOpen, setIsOpen, children }: ModalProps) => {
     <div className={`z-30 fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm overflow-y-auto transition-all ${isOpen ? '' : 'opacity-0 invisible'}`}>
       <div className='relative flex justify-center items-end sm:items-center min-h-full px-4 py-20'>
         <div className='absolute inset-0' onClick={() => setIsOpen(false)}/>
-        <div className={`relative max-w-lg p-6 bg-tim-coal rounded-xl transition-transform ${isOpen ? '' : 'translate-y-12'}`}>
+        <div className={`relative max-w-lg p-6 bg-zinc-950 rounded-xl transition-transform ${isOpen ? '' : 'translate-y-12'}`}>
           {children}
         </div>
       </div>
