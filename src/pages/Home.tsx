@@ -68,13 +68,15 @@ const Home = () => {
       </Section>
 
       <Section id='repos'>
-        <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 lg:gap-y-8 max-w-5xl mx-auto'>
-          {loadingRepos
-            ? [...Array(6)].map((value, index) => <RepoCardSkeleton key={index} />)
-            : repos.map(repo => <RepoCard key={repo.name} repo={repo} />)}
-        </div>
-        {errorLoadingRepos ? (
-          <h3 className='text-center'>An error occurred while loading repositories.</h3>
+        {!errorLoadingRepos ? (
+          <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 lg:gap-y-8 max-w-5xl mx-auto'>
+            {loadingRepos
+              ? [...Array(6)].map((value, index) => <RepoCardSkeleton key={index} />)
+              : repos.map(repo => <RepoCard key={repo.name} repo={repo} />)}
+          </div>
+        ) : null}
+        {errorLoadingRepos && !loadingRepos ? (
+          <h2 className='h3 text-center'>An error occurred while loading repositories.</h2>
         ) : null}
       </Section>
 
