@@ -12,10 +12,14 @@ const FourOhFour = () => {
   return (
     <main>
       <Section id='four-oh-four'>
-        <div className='text-center'>
-          <h1 className='mb-4'>404</h1>
-          <p>Page not found.</p>
-        </div>
+        <h1 className='text-center'>Page not found</h1>
+        <figure className='max-w-xs mt-16 mx-auto'>
+          <img
+            className='w-full h-full'
+            src='/images/misc/schmuserkadser.png'
+            alt='A picture of Schmuserkadser.'
+          />
+        </figure>
       </Section>
     </main>
   );
