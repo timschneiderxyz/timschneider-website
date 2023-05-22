@@ -11,8 +11,6 @@ import Modal from '@components/Modal';
 // Assets
 import IconGitHub from '@assets/social/github.svg';
 import IconTwitter from '@assets/social/twitter.svg';
-import IconXing from '@assets/social/xing.svg';
-
 const Footer = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -46,16 +44,6 @@ const Footer = () => {
             rel='noreferrer noopener'
           >
             <IconTwitter className='w-5 h-5 fill-white transition-colors group-hover:fill-[#1d9bf0]' />
-          </a>
-          <a
-            className='group'
-            href='https://www.xing.com/profile/tim_schneider328'
-            title='Link to Xing Profile'
-            aria-label='Link to Xing Profile'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            <IconXing className='w-5 h-5 fill-white transition-colors group-hover:fill-[#0698a0]' />
           </a>
         </div>
       </div>
