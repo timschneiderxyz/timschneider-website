@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:20-alpine
 
 COPY npm_install.sh /home/node/npm_install.sh
 RUN chmod a+x /home/node/npm_install.sh

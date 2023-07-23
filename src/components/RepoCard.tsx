@@ -5,11 +5,11 @@
 // Dependencies
 import React from 'react';
 
-// Assets
-import IconFolder from '@assets/ui/folder.svg';
-import IconArrowTopRightOnSquare from '@assets/ui/arrow-top-right-on-square.svg';
-import IconStar from '@assets/ui/star.svg';
-import IconForked from '@assets/ui/forked.svg';
+// SVGs
+import IconFolder from '@svgs/ui/folder.svg';
+import IconArrowTopRightOnSquare from '@svgs/ui/arrow-top-right-on-square.svg';
+import IconStar from '@svgs/ui/star.svg';
+import IconForked from '@svgs/ui/forked.svg';
 
 // Types
 import type Repository from '@interfaces/Repository';

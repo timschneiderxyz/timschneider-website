@@ -20,7 +20,7 @@ module.exports = {
   },
   alias: {
     '@': path.resolve(__dirname, 'src'),
-    '@assets': path.resolve(__dirname, 'src/assets'),
+    '@svgs': path.resolve(__dirname, 'src/svgs'),
     '@interfaces': path.resolve(__dirname, 'src/interfaces'),
     '@hooks': path.resolve(__dirname, 'src/hooks'),
     '@utils': path.resolve(__dirname, 'src/utils'),
@@ -28,7 +28,7 @@ module.exports = {
     '@pages': path.resolve(__dirname, 'src/pages')
   },
   entries: {
-    app: ['@/index.tsx', '@/css/main.scss']
+    app: ['@/index.tsx', '@/styles/main.scss']
   },
   copy: [
     {
