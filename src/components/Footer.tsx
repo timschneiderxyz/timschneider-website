@@ -2,15 +2,17 @@
     # Components - Footer
     ========================================================================  */
 
+'use client';
+
 // Dependencies
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 // Components
-import Modal from '@components/Modal';
+import Modal from '@/components/Modal';
 
 // SVGs
-import IconGitHub from '@svgs/social/github.svg';
-import IconTwitter from '@svgs/social/twitter.svg';
+import IconGitHub from '@/svgs/social/github.svg';
+import IconX from '@/svgs/social/x.svg';
 
 const Footer = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -38,13 +40,13 @@ const Footer = () => {
           </a>
           <a
             className='group'
-            href='https://twitter.com/timschneiderxyz'
-            title='Link to Twitter Profile'
-            aria-label='Link to Twitter Profile'
+            href='https://x.com/timschneiderxyz'
+            title='Link to X Profile'
+            aria-label='Link to X Profile'
             target='_blank'
             rel='noreferrer noopener'
           >
-            <IconTwitter className='w-5 h-5 fill-white transition-colors group-hover:fill-[#1d9bf0]' />
+            <IconX className='w-5 h-5 fill-white transition-colors group-hover:fill-[#1d9bf0]' />
           </a>
         </div>
       </div>

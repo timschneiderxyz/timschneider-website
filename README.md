@@ -1,7 +1,7 @@
 <h1 align="center"><a href="https://timschneider.xyz">timschneider-website</a></h1>
 
 <p align="center">
-  Personal website build with Webpack, React & Tailwind CSS.
+  Personal website build with Next.js & Tailwind CSS.
 </p>
 
 <p align="center">

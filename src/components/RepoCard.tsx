@@ -2,22 +2,16 @@
     # Components - Repository Card
     ========================================================================  */
 
-// Dependencies
-import React from 'react';
+// Types
+import type Repository from '@/types/repository';
 
 // SVGs
-import IconFolder from '@svgs/ui/folder.svg';
-import IconArrowTopRightOnSquare from '@svgs/ui/arrow-top-right-on-square.svg';
-import IconStar from '@svgs/ui/star.svg';
-import IconForked from '@svgs/ui/forked.svg';
+import IconFolder from '@/svgs/ui/folder.svg';
+import IconExternalLink from '@/svgs/ui/external-link.svg';
+import IconStar from '@/svgs/ui/star.svg';
+import IconForked from '@/svgs/ui/forked.svg';
 
-// Types
-import type Repository from '@interfaces/Repository';
-interface RepoCardProps {
-  repo: Repository;
-}
-
-export const RepoCard = ({ repo }: RepoCardProps) => {
+const RepoCard = ({ repo }: { repo: Repository }) => {
   return (
     <a
       className='group flex flex-col p-6 bg-zinc-950 border border-solid border-zinc-900 rounded-xl transition-transform duration-300 lg:hover:scale-105'
@@ -27,7 +21,7 @@ export const RepoCard = ({ repo }: RepoCardProps) => {
     >
       <div className='flex justify-between items-center mb-5'>
         <IconFolder className='w-7 h-7 fill-slate-400' />
-        <IconArrowTopRightOnSquare className='w-4 h-4 fill-slate-400 transition-all duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
+        <IconExternalLink className='w-4 h-4 fill-slate-400 transition-all duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
       </div>
       <h2 className='h3 mb-2'>{repo.name}</h2>
       <p className='grow text-base'>{repo.description}</p>
@@ -58,17 +52,4 @@ export const RepoCard = ({ repo }: RepoCardProps) => {
   );
 };
 
-export const RepoCardSkeleton = () => {
-  return (
-    <div className='relative flex flex-col p-6 bg-zinc-950 rounded-xl overflow-hidden'>
-      <div className='h-5 w-8/12 mb-4 bg-white/10 rounded-md' />
-      <div className='h-20 bg-slate-400/10 rounded-md' />
-      <div className='flex gap-5 mt-6'>
-        <div className='h-4 w-4/12 bg-white/10 rounded-md' />
-        <div className='h-4 w-2/12 bg-white/10 rounded-md' />
-        <div className='h-4 w-2/12 bg-white/10 rounded-md' />
-      </div>
-      <div className='absolute inset-0 animate-[skeleton-loader_2s_infinite] bg-gradient-to-r from-transparent via-slate-400/10 to-transparent' />
-    </div>
-  );
-};
+export default RepoCard;

@@ -7,10 +7,10 @@
 
 # Dependencies
 node_modules/
-vendor/
 
 # Distribution
-dist/
+/.next
+/out
 
 # Environment
 .env*

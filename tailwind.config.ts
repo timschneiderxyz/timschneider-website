@@ -2,11 +2,11 @@
     # Tailwind CSS - Config
     ========================================================================  */
 
-import defaultTheme from 'tailwindcss/defaultTheme';
 import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
-  content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
+  content: ['./src/app/**/*.{js,jsx,ts,tsx,mdx}', './src/components/**/*.{js,jsx,ts,tsx,mdx}'],
   corePlugins: {
     preflight: false,
     container: false
@@ -15,7 +15,7 @@ export default {
   theme: {
     // Replace the default config.
     fontFamily: {
-      sans: ['Rubik', ...defaultTheme.fontFamily.sans],
+      sans: ['var(--font-rubik)', ...defaultTheme.fontFamily.sans],
       serif: [...defaultTheme.fontFamily.serif],
       mono: [...defaultTheme.fontFamily.mono]
     },
@@ -30,16 +30,6 @@ export default {
     extend: {
       colors: {
         'tim-primary': '#f8484e'
-      },
-      keyframes: {
-        'skeleton-loader': {
-          '0%': {
-            transform: 'translateX(-100%)'
-          },
-          '100%': {
-            transform: 'translateX(100%)'
-          }
-        }
       }
     }
   }
