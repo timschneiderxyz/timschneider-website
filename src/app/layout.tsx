@@ -2,7 +2,7 @@
     # Layout
     ========================================================================  */
 
-import '../styles/main.scss';
+import '@/styles/main.scss';
 import { rubik } from '@/fonts/fonts';
 
 // Metadata
