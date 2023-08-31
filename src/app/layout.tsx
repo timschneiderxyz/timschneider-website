@@ -83,7 +83,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         />
       </head>
       <body
-        className={`bg-black font-sans text-lg text-slate-400 overflow-x-hidden selection:bg-emerald-500 selection:text-black ${rubik.variable}`}
+        className={`bg-black font-sans text-lg text-slate-400 overflow-x-hidden selection:bg-emerald-400 selection:text-black ${rubik.variable}`}
       >
         <Header />
         {children}

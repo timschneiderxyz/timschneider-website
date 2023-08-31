@@ -10,12 +10,12 @@ start:
 	@pnpm start ||:
 
 clean:
-	rm -f pnpm-lock.yaml
 	rm -rf node_modules/
 	rm -rf .next/
 	rm -rf out/
 
 nuke: clean
+	rm -f pnpm-lock.yaml
 	@pnpm install ||:
 
 %:

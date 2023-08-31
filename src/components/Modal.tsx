@@ -22,7 +22,7 @@ const Modal = ({
 
   return (
     <div
-      className={`z-30 fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm overflow-y-auto transition-all ${
+      className={`z-50 fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm overflow-y-auto transition-all ${
         isOpen ? '' : 'opacity-0 invisible'
       }`}
     >
