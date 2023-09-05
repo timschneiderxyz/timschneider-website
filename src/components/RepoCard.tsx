@@ -2,6 +2,9 @@
     # Components - Repository Card
     ========================================================================  */
 
+// Dependencies
+import { forwardRef } from 'react';
+
 // Types
 import type Repository from '@/types/repository';
 
@@ -11,9 +14,15 @@ import IconExternalLink from '@/svgs/ui/external-link.svg';
 import IconStar from '@/svgs/ui/star.svg';
 import IconForked from '@/svgs/ui/forked.svg';
 
-const RepoCard = ({ repo }: { repo: Repository }) => {
+// Props
+export interface RepoCardProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  repo: Repository;
+}
+
+const RepoCard = forwardRef<HTMLAnchorElement, RepoCardProps>(({ repo }, ref) => {
   return (
     <a
+      ref={ref}
       className='group flex flex-col p-6 bg-zinc-950 border border-solid border-zinc-900 rounded-xl transition-transform duration-300 lg:hover:scale-105'
       href={repo.url}
       target='_blank'
@@ -21,7 +30,7 @@ const RepoCard = ({ repo }: { repo: Repository }) => {
     >
       <div className='flex justify-between items-center mb-5'>
         <IconFolder className='w-7 h-7 fill-slate-400' />
-        <IconExternalLink className='w-4 h-4 fill-slate-400 transition-all duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
+        <IconExternalLink className='w-4 h-4 fill-slate-400 transition duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
       </div>
       <h2 className='h3 mb-2'>{repo.name}</h2>
       <p className='grow text-base'>{repo.description}</p>
@@ -50,6 +59,7 @@ const RepoCard = ({ repo }: { repo: Repository }) => {
       </div>
     </a>
   );
-};
+});
+RepoCard.displayName = 'RepoCard';
 
 export default RepoCard;

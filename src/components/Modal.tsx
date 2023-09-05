@@ -5,24 +5,24 @@
 'use client';
 
 // Dependencies
-import { useEffect } from 'react';
+import { forwardRef, useEffect } from 'react';
 
-const Modal = ({
-  isOpen,
-  setIsOpen,
-  children
-}: {
+// Props
+export interface ModalProps extends React.HTMLAttributes<HTMLDivElement> {
   isOpen: React.SetStateAction<boolean>;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   children: React.ReactNode;
-}) => {
+}
+
+const Modal = forwardRef<HTMLDivElement, ModalProps>(({ isOpen, setIsOpen, children }, ref) => {
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
   }, [isOpen]);
 
   return (
     <div
-      className={`z-50 fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm overflow-y-auto transition-all ${
+      ref={ref}
+      className={`z-50 fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm overflow-y-auto transition ${
         isOpen ? '' : 'opacity-0 invisible'
       }`}
     >
@@ -38,6 +38,7 @@ const Modal = ({
       </div>
     </div>
   );
-};
+});
+Modal.displayName = 'Modal';
 
 export default Modal;
