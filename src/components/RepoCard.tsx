@@ -19,7 +19,7 @@ export interface RepoCardProps extends React.AnchorHTMLAttributes<HTMLAnchorElem
   repo: Repository;
 }
 
-const RepoCard = forwardRef<HTMLAnchorElement, RepoCardProps>(({ repo }, ref) => {
+const RepoCard = forwardRef<HTMLAnchorElement, RepoCardProps>(({ repo, ...props }, ref) => {
   return (
     <a
       ref={ref}
@@ -27,6 +27,7 @@ const RepoCard = forwardRef<HTMLAnchorElement, RepoCardProps>(({ repo }, ref) =>
       href={repo.url}
       target='_blank'
       rel='noreferrer noopener'
+      {...props}
     >
       <div className='flex justify-between items-center mb-5'>
         <IconFolder className='w-7 h-7 fill-slate-400' />
