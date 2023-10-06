@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/scripts/fywin",
+      "destination": "https://raw.githubusercontent.com/timschneiderxyz/fyWin/main/fyWin.ps1",
+      "permanent": true
+    }
+  ]
+}

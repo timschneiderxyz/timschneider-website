@@ -17,7 +17,12 @@ const Header = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
       <header ref={ref} {...props}>
         <div className='container'>
           <div className='flex justify-between py-10'>
-            <Link className='flex items-center' href='/' title='Link to Home' aria-label='Link to Home'>
+            <Link
+              className='flex items-center'
+              href='/'
+              title='Link to Home'
+              aria-label='Link to Home'
+            >
               <Logo className='w-8 h-8 mr-3 fill-tim-primary' />
               <strong className='text-white'>Tim Schneider</strong>
             </Link>
