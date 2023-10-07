@@ -9,13 +9,11 @@
 node_modules/
 
 # Distribution
-/.next
-/out
+.next/
+out/
 
 # Environment
 .env*
 
 # Miscellaneous
-.idea/*
 .DS_Store
-Thumbs.db
