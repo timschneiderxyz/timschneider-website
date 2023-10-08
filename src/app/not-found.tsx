@@ -6,6 +6,9 @@
 import Section from '@/components/Section';
 import Image from 'next/image';
 
+// Images
+import schmuserkadser from '@/images/schmuserkadser.png';
+
 const NotFound = () => {
   return (
     <main>
@@ -14,10 +17,9 @@ const NotFound = () => {
         <figure className='max-w-xs mt-16 mx-auto'>
           <Image
             className='w-full h-full'
-            src='/images/schmuserkadser.png'
-            width={350}
-            height={267}
+            src={schmuserkadser}
             alt='A picture of Schmuserkadser.'
+            placeholder='blur'
           />
         </figure>
       </Section>

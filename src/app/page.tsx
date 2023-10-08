@@ -10,6 +10,9 @@ import Section from '@/components/Section';
 import Image from 'next/image';
 import RepoCard from '@/components/RepoCard';
 
+// Images
+import tim from '@/images/tim.jpg';
+
 const Home = async () => {
   const repos = await getPinnedRepos();
 
@@ -22,10 +25,9 @@ const Home = async () => {
               <figure className='max-w-xs lg:max-w-none mx-auto rotate-3 aspect-square'>
                 <Image
                   className='w-full h-full rounded-2xl object-cover'
-                  src='/images/tim.jpg'
-                  width={512}
-                  height={512}
+                  src={tim}
                   alt='A picture of Tim.'
+                  placeholder='blur'
                 />
               </figure>
             </div>
