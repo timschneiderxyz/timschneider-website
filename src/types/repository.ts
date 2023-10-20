@@ -2,7 +2,7 @@
     # Types - Repository
     ========================================================================  */
 
-export default interface Repository {
+type Repository = {
   url: string;
   name: string;
   description: string;
@@ -14,4 +14,6 @@ export default interface Repository {
     totalCount: number;
   };
   forkCount: number;
-}
+};
+
+export default Repository;

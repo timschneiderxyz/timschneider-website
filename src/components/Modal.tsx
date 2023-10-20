@@ -8,10 +8,10 @@
 import { forwardRef, useEffect } from 'react';
 
 // Props
-export interface ModalProps extends React.HTMLAttributes<HTMLDivElement> {
+export type ModalProps = React.HTMLAttributes<HTMLDivElement> & {
   isOpen: React.SetStateAction<boolean>;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+};
 
 const Modal = forwardRef<HTMLDivElement, ModalProps>(
   ({ isOpen, setIsOpen, children, ...props }, ref) => {

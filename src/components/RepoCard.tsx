@@ -15,9 +15,9 @@ import IconStar from '@/svgs/ui/star.svg';
 import IconForked from '@/svgs/ui/forked.svg';
 
 // Props
-export interface RepoCardProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export type RepoCardProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   repo: Repository;
-}
+};
 
 const RepoCard = forwardRef<HTMLAnchorElement, RepoCardProps>(({ repo, ...props }, ref) => {
   return (
