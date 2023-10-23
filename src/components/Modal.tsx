@@ -6,6 +6,7 @@
 
 // Dependencies
 import { forwardRef, useEffect } from 'react';
+import clsx from 'clsx';
 
 // Props
 export type ModalProps = React.HTMLAttributes<HTMLDivElement> & {
@@ -14,7 +15,7 @@ export type ModalProps = React.HTMLAttributes<HTMLDivElement> & {
 };
 
 const Modal = forwardRef<HTMLDivElement, ModalProps>(
-  ({ isOpen, setIsOpen, children, ...props }, ref) => {
+  ({ isOpen, setIsOpen, className, children, ...props }, ref) => {
     useEffect(() => {
       document.body.style.overflow = isOpen ? 'hidden' : '';
     }, [isOpen]);
@@ -22,17 +23,20 @@ const Modal = forwardRef<HTMLDivElement, ModalProps>(
     return (
       <div
         ref={ref}
-        className={`z-50 fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm overflow-y-auto transition ${
-          isOpen ? '' : 'opacity-0 invisible'
-        }`}
+        className={clsx(
+          'z-50 fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm overflow-y-auto transition',
+          isOpen ? '' : 'opacity-0 invisible',
+          className
+        )}
         {...props}
       >
         <div className='relative flex justify-center items-end sm:items-center min-h-full px-4 py-20'>
           <div className='absolute inset-0' onClick={() => setIsOpen(false)} />
           <div
-            className={`relative max-w-lg p-6 bg-zinc-950 border border-solid border-zinc-900 rounded-xl transition-transform ${
+            className={clsx(
+              'relative max-w-lg p-6 bg-zinc-950 border border-solid border-zinc-900 rounded-xl transition-transform',
               isOpen ? '' : 'translate-y-12'
-            }`}
+            )}
           >
             {children}
           </div>
