@@ -4,9 +4,11 @@
 
 import '@/styles/main.scss';
 import { rubik } from '@/fonts/fonts';
+import type { Metadata, Viewport } from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 // Metadata
-import type { Metadata } from 'next';
 export const metadata: Metadata = {
   metadataBase: new URL('https://timschneider.xyz'),
   title: 'Tim Schneider',
@@ -29,7 +31,6 @@ export const metadata: Metadata = {
     }
   },
   manifest: '/favicons/manifest.webmanifest',
-  themeColor: '#000000',
   openGraph: {
     type: 'website',
     locale: 'de_DE',
@@ -55,6 +56,11 @@ export const metadata: Metadata = {
   }
 };
 
+// Viewport
+export const viewport: Viewport = {
+  themeColor: '#000000'
+};
+
 // JSON-LD
 const jsonLd = {
   '@context': 'http://schema.org',
@@ -68,10 +74,6 @@ const jsonLd = {
   url: 'https://timschneider.xyz',
   sameAs: ['https://x.com/timschneiderxyz', 'https://github.com/timschneiderxyz']
 };
-
-// Components
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
