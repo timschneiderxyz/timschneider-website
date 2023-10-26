@@ -2,8 +2,8 @@
     # Page
     ========================================================================  */
 
-// APIs
-import { getPinnedRepos } from '@/app/api/github/getPinnedRepos';
+// Data
+import { getPinnedRepos } from '@/data/get-pinned-repos';
 
 // Components
 import Section from '@/components/Section';

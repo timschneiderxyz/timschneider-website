@@ -1,9 +1,22 @@
 /*  ========================================================================
-    # API - GitHub - Get Pinned Repositories
+    # Data - Get Pinned Repositories
     ========================================================================  */
 
-// Types
-import type Repository from '@/types/repository';
+import 'server-only';
+
+export type Repository = {
+  url: string;
+  name: string;
+  description: string;
+  primaryLanguage?: {
+    name: string;
+    color: string;
+  };
+  stargazers: {
+    totalCount: number;
+  };
+  forkCount: number;
+};
 
 /**
  * Returns the pinned repositories from the GitHub GraphQL API.
@@ -12,7 +25,6 @@ export const getPinnedRepos = async () => {
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
-      'User-Agent': 'Personal Website',
       Authorization: `Bearer ${process.env.GITHUB_API_TOKEN}`,
       'Content-Type': 'application/json'
     },
@@ -38,8 +50,7 @@ export const getPinnedRepos = async () => {
           }
         }
       }`
-    }),
-    next: { revalidate: 86400 }
+    })
   });
 
   if (!response.ok) {
