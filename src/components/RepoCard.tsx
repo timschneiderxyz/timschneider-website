@@ -39,7 +39,7 @@ const RepoCard = forwardRef<HTMLAnchorElement, RepoCardProps>(
           <IconExternalLink className='w-4 h-4 fill-slate-400 transition duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
         </div>
         <h2 className='h3 mb-2'>{repo.name}</h2>
-        <p className='grow text-base'>{repo.description}</p>
+        <p className='grow'>{repo.description}</p>
         <div className='flex gap-5 mt-5 text-sm leading-none'>
           {repo.primaryLanguage?.name && repo.primaryLanguage?.color ? (
             <div className='flex items-end'>
