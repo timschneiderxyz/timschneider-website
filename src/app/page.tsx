@@ -47,9 +47,9 @@ const Home = async () => {
                   optimise and automate as many processes as possible. To unwind, I like to
                   photograph, listen to music or play a video game.
                 </p>
-                <p>Here are a few of the technologies and languages I currently use:</p>
+                <p>Here are a few of the technologies I currently use:</p>
               </div>
-              <ul className='grid grid-cols-[repeat(auto-fit,200px)] gap-y-2 gap-x-12 mt-6 pl-6'>
+              <div className='flex flex-wrap gap-2 mt-6'>
                 {[
                   'Docker',
                   'CSS3 / SCSS',
@@ -61,12 +61,15 @@ const Home = async () => {
                   'Next.js',
                   'PHP',
                   'WordPress'
-                ].map((item, index) => (
-                  <li key={index} className='marker:text-tim-primary'>
+                ].map(item => (
+                  <span
+                    key={item}
+                    className='inline-block px-3 py-2.5 bg-zinc-950 border border-solid border-zinc-900 rounded-xl leading-none'
+                  >
                     {item}
-                  </li>
+                  </span>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>
