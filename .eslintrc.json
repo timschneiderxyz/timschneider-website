@@ -12,7 +12,6 @@
   ],
   "rules": {
     "prettier/prettier": 2,
-    "@typescript-eslint/no-var-requires": 0,
     "block-scoped-var": 2,
     "eqeqeq": 2,
     "func-names": 2,

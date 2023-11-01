@@ -3,8 +3,9 @@
     ========================================================================  */
 
 import '@/styles/main.scss';
-import { rubik } from '@/fonts/fonts';
 import type { Metadata, Viewport } from 'next';
+import clsx from 'clsx';
+import { rubik } from '@/fonts/fonts';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -85,7 +86,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         />
       </head>
       <body
-        className={`bg-black font-sans text-lg text-slate-400 overflow-x-hidden selection:bg-emerald-400 selection:text-black ${rubik.variable}`}
+        className={clsx(
+          'bg-black font-sans text-lg text-slate-400 overflow-x-hidden selection:bg-emerald-400 selection:text-black',
+          rubik.variable
+        )}
       >
         <Header />
         {children}

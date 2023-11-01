@@ -11,7 +11,8 @@ const robots = (): MetadataRoute.Robots => {
       allow: ['/'],
       disallow: []
     },
-    sitemap: 'https://timschneider.xyz/sitemap.xml'
+    sitemap: 'https://timschneider.xyz/sitemap.xml',
+    host: 'https://timschneider.xyz'
   };
 };
 
