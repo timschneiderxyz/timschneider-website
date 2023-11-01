@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://timschneider.xyz'),
   title: 'Tim Schneider',
   description:
-    'Developer Portfolio of Tim Schneider. Based in a small village near Koblenz, Germany. Creating high-quality websites and working with DevOps.',
+    'Developer Portfolio of Tim Schneider. Creating exceptional websites and optimizing workflows with DevOps expertise.',
   icons: {
     icon: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     title: 'Tim Schneider',
     description:
-      'Developer Portfolio of Tim Schneider. Based in a small village near Koblenz, Germany. Creating high-quality websites and working with DevOps.',
+      'Developer Portfolio of Tim Schneider. Creating exceptional websites and optimizing workflows with DevOps expertise.',
     url: 'https://timschneider.xyz',
     images: [
       {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     site: '@timschneiderxyz',
     title: 'Tim Schneider',
     description:
-      'Developer Portfolio of Tim Schneider. Based in a small village near Koblenz, Germany. Creating high-quality websites and working with DevOps.',
+      'Developer Portfolio of Tim Schneider. Creating exceptional websites and optimizing workflows with DevOps expertise.',
     images: ['/favicons/share.png']
   }
 };
