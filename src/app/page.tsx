@@ -20,9 +20,9 @@ const Home = async () => {
     <main>
       <Section id='about'>
         <div className='container'>
-          <div className='grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-20'>
+          <div className='grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-24'>
             <div>
-              <figure className='max-w-xs lg:max-w-none mx-auto rotate-3 aspect-square'>
+              <figure className='max-w-sm mx-auto rotate-3 aspect-square'>
                 <Image
                   className='w-full h-full rounded-2xl object-cover'
                   src={tim}
@@ -85,11 +85,13 @@ const Home = async () => {
 
       <Section id='cta'>
         <div className='container'>
-          <div className='flex flex-col justify-center items-center h-[420px] md:h-[600px] p-6 bg-zinc-950 border border-solid border-zinc-900 rounded-xl text-center'>
-            <h2 className='mb-4'>Like to get in touch?</h2>
-            <p>
-              Then feel free to <a href='mailto:timschneider.xyz@gmail.com'>send me an email</a>.
-            </p>
+          <div className='flex justify-center items-center h-[420px] md:h-[600px] p-6 bg-zinc-950 border border-solid border-zinc-900 rounded-xl'>
+            <div className='text-center'>
+              <h2 className='mb-4'>Like to get in touch?</h2>
+              <p>
+                Then feel free to <a href='mailto:timschneider.xyz@gmail.com'>send me an email</a>.
+              </p>
+            </div>
           </div>
         </div>
       </Section>
