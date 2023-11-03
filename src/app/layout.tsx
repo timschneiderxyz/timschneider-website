@@ -5,7 +5,7 @@
 import '@/styles/main.scss';
 import type { Metadata, Viewport } from 'next';
 import clsx from 'clsx';
-import { rubik } from '@/fonts/fonts';
+import { GeistSans } from '@/fonts/fonts';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -88,7 +88,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body
         className={clsx(
           'bg-black font-sans text-slate-400 overflow-x-hidden selection:bg-emerald-400 selection:text-black',
-          rubik.variable
+          GeistSans.variable
         )}
       >
         <Header />

@@ -4,19 +4,19 @@
 
 import localFont from 'next/font/local';
 
-export const rubik = localFont({
-  variable: '--font-rubik',
+export const GeistSans = localFont({
   src: [
     {
-      path: './rubik-regular.woff2',
+      path: './geist-regular.woff2',
       weight: '400',
       style: 'normal'
     },
     {
-      path: './rubik-500.woff2',
-      weight: '500',
+      path: './geist-bold.woff2',
+      weight: '700',
       style: 'normal'
     }
   ],
-  display: 'swap'
+  display: 'swap',
+  variable: '--font-geist-sans'
 });

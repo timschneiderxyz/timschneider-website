@@ -15,7 +15,7 @@ export default {
   theme: {
     // Replace the default config.
     fontFamily: {
-      sans: ['var(--font-rubik)', ...defaultTheme.fontFamily.sans],
+      sans: ['var(--font-geist-sans)'],
       serif: [...defaultTheme.fontFamily.serif],
       mono: [...defaultTheme.fontFamily.mono]
     },

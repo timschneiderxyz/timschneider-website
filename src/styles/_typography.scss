@@ -14,7 +14,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  @apply font-medium text-white;
+  @apply font-bold text-white;
 }
 
 h1,
@@ -34,7 +34,7 @@ h3,
 
 p {
   a {
-    @apply font-medium text-tim-primary;
+    @apply font-bold text-tim-primary;
 
     &:hover {
       @apply underline;
