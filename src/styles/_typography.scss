@@ -31,23 +31,3 @@ h3,
 .h3 {
   @apply text-xl;
 }
-
-p {
-  a {
-    @apply font-bold text-white underline underline-offset-2;
-  }
-}
-
-.text-block {
-  h2 {
-    @apply mt-10;
-  }
-
-  h3 {
-    @apply mt-8;
-  }
-
-  p {
-    @apply mt-6;
-  }
-}

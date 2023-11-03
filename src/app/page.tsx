@@ -32,7 +32,7 @@ const Home = async () => {
               </figure>
             </div>
             <div>
-              <div className='text-block'>
+              <div className='prose'>
                 <h1>Hey there, I am Tim.</h1>
                 <p>
                   Already in my childhood, I had a lot of fun learning and understanding
@@ -86,8 +86,8 @@ const Home = async () => {
       <Section id='cta'>
         <div className='container'>
           <div className='flex justify-center items-center h-[420px] md:h-[600px] p-6 bg-neutral-950 border border-solid border-neutral-900 rounded-xl'>
-            <div className='text-center'>
-              <h2 className='mb-4'>Like to get in touch?</h2>
+            <div className='prose text-center'>
+              <h2>Like to get in touch?</h2>
               <p>
                 Then feel free to <a href='mailto:timschneider.xyz@gmail.com'>send me an email</a>.
               </p>
