@@ -19,7 +19,7 @@ h6,
 
 h1,
 .h1 {
-  @apply text-4xl tracking-tight;
+  @apply text-4xl tracking-tighter;
 }
 
 h2,
@@ -34,11 +34,7 @@ h3,
 
 p {
   a {
-    @apply font-bold text-tim-primary;
-
-    &:hover {
-      @apply underline;
-    }
+    @apply font-bold text-white underline underline-offset-2;
   }
 }
 

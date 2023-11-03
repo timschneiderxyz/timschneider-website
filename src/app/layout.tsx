@@ -87,7 +87,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       </head>
       <body
         className={clsx(
-          'bg-black font-sans text-slate-400 overflow-x-hidden selection:bg-emerald-400 selection:text-black',
+          'bg-black font-sans text-neutral-300 overflow-x-hidden selection:bg-emerald-400 selection:text-black',
           GeistSans.variable
         )}
       >

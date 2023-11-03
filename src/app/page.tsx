@@ -64,7 +64,7 @@ const Home = async () => {
                 ].map(item => (
                   <span
                     key={item}
-                    className='inline-block px-3 py-2.5 bg-zinc-950 border border-solid border-zinc-900 rounded-xl leading-none'
+                    className='inline-block px-3 py-2.5 bg-neutral-950 border border-solid border-neutral-900 rounded-xl leading-none'
                   >
                     {item}
                   </span>
@@ -85,7 +85,7 @@ const Home = async () => {
 
       <Section id='cta'>
         <div className='container'>
-          <div className='flex justify-center items-center h-[420px] md:h-[600px] p-6 bg-zinc-950 border border-solid border-zinc-900 rounded-xl'>
+          <div className='flex justify-center items-center h-[420px] md:h-[600px] p-6 bg-neutral-950 border border-solid border-neutral-900 rounded-xl'>
             <div className='text-center'>
               <h2 className='mb-4'>Like to get in touch?</h2>
               <p>

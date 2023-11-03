@@ -34,8 +34,8 @@ const Modal = forwardRef<HTMLDivElement, ModalProps>(
           <div className='absolute inset-0' onClick={() => setIsOpen(false)} />
           <div
             className={clsx(
-              'relative max-w-lg p-6 bg-zinc-950 border border-solid border-zinc-900 rounded-xl transition-transform',
-              isOpen ? '' : 'translate-y-12'
+              'relative max-w-lg p-6 bg-neutral-950 border border-solid border-neutral-900 rounded-xl transition-transform duration-300',
+              isOpen ? '' : 'translate-y-8'
             )}
           >
             {children}

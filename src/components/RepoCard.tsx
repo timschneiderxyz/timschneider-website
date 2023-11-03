@@ -26,7 +26,7 @@ const RepoCard = forwardRef<HTMLAnchorElement, RepoCardProps>(
       <a
         ref={ref}
         className={clsx(
-          'group flex flex-col p-6 bg-zinc-950 border border-solid border-zinc-900 rounded-xl transition-transform duration-300 lg:hover:scale-105',
+          'group flex flex-col p-6 bg-neutral-950 border border-solid border-neutral-900 rounded-xl transition-transform duration-300 lg:hover:scale-105',
           className
         )}
         href={repo.url}
@@ -34,9 +34,9 @@ const RepoCard = forwardRef<HTMLAnchorElement, RepoCardProps>(
         rel='noreferrer noopener'
         {...props}
       >
-        <div className='flex justify-between items-center mb-5'>
-          <IconFolder className='w-7 h-7 fill-slate-400' />
-          <IconExternalLink className='w-4 h-4 fill-slate-400 transition duration-300 lg:group-hover:scale-125 lg:group-hover:fill-tim-primary' />
+        <div className='flex justify-between mb-5'>
+          <IconFolder className='w-7 h-7 fill-neutral-600 transition-color duration-300 lg:group-hover:fill-white' />
+          <IconExternalLink className='w-4 h-4 fill-neutral-600 transition-color duration-300 lg:group-hover:fill-white' />
         </div>
         <h2 className='h3 mb-2'>{repo.name}</h2>
         <p className='grow'>{repo.description}</p>

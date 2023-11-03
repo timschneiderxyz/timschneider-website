@@ -27,10 +27,6 @@ export default {
       xxl: '1400px'
     },
     // Extend the default config.
-    extend: {
-      colors: {
-        'tim-primary': '#f8484e'
-      }
-    }
+    extend: {}
   }
 } satisfies Config;

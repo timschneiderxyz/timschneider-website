@@ -23,7 +23,7 @@ const Header = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
               title='Link to Home'
               aria-label='Link to Home'
             >
-              <Logo className='w-8 h-8 mr-3 fill-tim-primary' />
+              <Logo className='w-8 h-8 mr-3 fill-[#f8484e]' />
               <strong className='text-lg text-white'>Tim Schneider</strong>
             </Link>
           </div>
