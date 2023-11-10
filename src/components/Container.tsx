@@ -1,16 +1,16 @@
 /*  ========================================================================
-    # Components - Section
+    # Components - Container
     ========================================================================  */
 
 // Dependencies
 import { forwardRef } from 'react';
 import clsx from 'clsx';
 
-const Section = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
+const Container = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => {
-    return <section ref={ref} className={clsx('relative py-12', className)} {...props} />;
+    return <div ref={ref} className={clsx('max-w-2xl w-11/12 mx-auto', className)} {...props} />;
   }
 );
-Section.displayName = 'Section';
+Container.displayName = 'Container';
 
-export default Section;
+export default Container;

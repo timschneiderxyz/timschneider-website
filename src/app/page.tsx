@@ -7,6 +7,7 @@ import { getPinnedRepos } from '@/data/get-pinned-repos';
 
 // Components
 import Section from '@/components/Section';
+import Container from '@/components/Container';
 import Image from 'next/image';
 import RepoCard from '@/components/RepoCard';
 
@@ -19,8 +20,8 @@ const Home = async () => {
   return (
     <main>
       <Section id='about'>
-        <div className='container'>
-          <div className='grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-24'>
+        <Container>
+          <div className='flex flex-col gap-16'>
             <div>
               <figure className='max-w-sm mx-auto rotate-3 aspect-square'>
                 <Image
@@ -52,15 +53,15 @@ const Home = async () => {
               <div className='flex flex-wrap gap-2 mt-6'>
                 {[
                   'Docker',
-                  'CSS3 / SCSS',
-                  'Tailwind CSS',
                   'Node.js',
-                  'JavaScript / TypeScript',
+                  'JavaScript',
+                  'TypeScript',
                   'Webpack',
                   'React',
                   'Next.js',
                   'PHP',
-                  'WordPress'
+                  'WordPress',
+                  'Tailwind CSS'
                 ].map(item => (
                   <span
                     key={item}
@@ -72,20 +73,20 @@ const Home = async () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </Section>
 
       <Section id='repos'>
-        <div className='container'>
-          <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 lg:gap-y-8 max-w-5xl mx-auto'>
+        <Container>
+          <div className='grid sm:grid-cols-2 gap-4'>
             {repos?.map(repo => <RepoCard key={repo.name} repo={repo} />)}
           </div>
-        </div>
+        </Container>
       </Section>
 
       <Section id='cta'>
-        <div className='container'>
-          <div className='flex justify-center items-center h-[420px] md:h-[600px] p-6 bg-neutral-950 border border-solid border-neutral-900 rounded-xl'>
+        <Container>
+          <div className='flex justify-center items-center h-96 p-6 bg-neutral-950 border border-solid border-neutral-900 rounded-xl'>
             <div className='prose text-center'>
               <h2>Like to get in touch?</h2>
               <p>
@@ -93,7 +94,7 @@ const Home = async () => {
               </p>
             </div>
           </div>
-        </div>
+        </Container>
       </Section>
     </main>
   );
