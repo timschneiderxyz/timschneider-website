@@ -38,6 +38,7 @@ const Footer = ({ ...props }: React.HTMLAttributes<HTMLDivElement>) => {
               target='_blank'
               rel='noreferrer noopener'
             >
+              <span className='sr-only'>GitHub</span>
               <IconGitHub className='w-5 h-5 fill-white transition-colors group-hover:fill-[#9f7be1]' />
             </a>
             <a
@@ -48,6 +49,7 @@ const Footer = ({ ...props }: React.HTMLAttributes<HTMLDivElement>) => {
               target='_blank'
               rel='noreferrer noopener'
             >
+              <span className='sr-only'>X</span>
               <IconX className='w-5 h-5 fill-white transition-colors group-hover:fill-[#1d9bf0]' />
             </a>
           </div>
