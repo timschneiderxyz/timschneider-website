@@ -6,22 +6,18 @@
 import Container from '@/components/Container';
 import Link from 'next/link';
 
-// SVGs
-import Logo from '@/svgs/logo.svg';
-
 const Header = ({ ...props }: React.HTMLAttributes<HTMLDivElement>) => {
   return (
     <header {...props}>
       <Container>
-        <div className='flex justify-between py-10'>
+        <div className='flex py-10'>
           <Link
-            className='flex items-center'
+            className='flex justify-center items-center w-10 h-10 border-2 border-solid border-white text-lg font-bold leading-none text-white select-none'
             href='/'
             title='Link to Home'
             aria-label='Link to Home'
           >
-            <Logo className='w-8 h-8 mr-3 fill-[#f8484e]' />
-            <strong className='text-lg text-white'>Tim Schneider</strong>
+            TS
           </Link>
         </div>
       </Container>
