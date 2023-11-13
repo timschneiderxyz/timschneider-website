@@ -59,7 +59,14 @@ export default {
             },
             a: {
               fontWeight: defaultTheme.fontWeight.bold,
-              textUnderlineOffset: defaultTheme.textUnderlineOffset[2]
+              textUnderlineOffset: defaultTheme.textUnderlineOffset[4],
+              textDecorationColor: colors.neutral[600],
+              transitionProperty: defaultTheme.transitionProperty.colors,
+              transitionTimingFunction: defaultTheme.transitionTimingFunction.DEFAULT,
+              transitionDuration: defaultTheme.transitionDuration.DEFAULT
+            },
+            'a:hover': {
+              textDecorationColor: colors.white
             }
           }
         }
