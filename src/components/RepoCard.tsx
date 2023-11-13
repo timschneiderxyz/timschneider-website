@@ -26,7 +26,7 @@ const RepoCard = forwardRef<HTMLAnchorElement, RepoCardProps>(
       <a
         ref={ref}
         className={clsx(
-          'group flex flex-col p-6 bg-neutral-950 border border-solid border-neutral-900 rounded-xl transition-transform duration-300 sm:hover:scale-105',
+          'group flex flex-col p-6 bg-neutral-950 border border-solid border-neutral-900 rounded-md transition-transform duration-300 sm:hover:scale-105',
           className
         )}
         href={repo.url}

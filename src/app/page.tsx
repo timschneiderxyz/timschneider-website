@@ -25,7 +25,7 @@ const Home = async () => {
             <div>
               <figure className='max-w-sm mx-auto rotate-3 aspect-square'>
                 <Image
-                  className='w-full h-full rounded-2xl object-cover'
+                  className='w-full h-full rounded-md object-cover'
                   src={tim}
                   alt='A picture of Tim.'
                   placeholder='blur'
@@ -65,7 +65,7 @@ const Home = async () => {
                 ].map(item => (
                   <span
                     key={item}
-                    className='inline-block px-3 py-2.5 bg-neutral-950 border border-solid border-neutral-900 rounded-xl leading-none'
+                    className='inline-block px-3 py-2.5 bg-neutral-950 border border-solid border-neutral-900 rounded-md leading-none'
                   >
                     {item}
                   </span>
@@ -86,7 +86,7 @@ const Home = async () => {
 
       <Section id='cta'>
         <Container>
-          <div className='flex justify-center items-center h-96 p-6 bg-neutral-950 border border-solid border-neutral-900 rounded-xl'>
+          <div className='flex justify-center items-center h-96 p-6 bg-neutral-950 border border-solid border-neutral-900 rounded-md'>
             <div className='prose text-center'>
               <h2>Like to get in touch?</h2>
               <p>
