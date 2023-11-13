@@ -68,12 +68,10 @@ const jsonLd = {
   '@type': 'Person',
   gender: 'Male',
   name: 'Tim Schneider',
-  alternateName: 'timschneider',
-  image: 'https://timschneider.xyz/images/tim.jpg',
   description: 'Developer from Germany.',
   jobTitle: 'Developer',
   url: 'https://timschneider.xyz',
-  sameAs: ['https://x.com/timschneiderxyz', 'https://github.com/timschneiderxyz']
+  sameAs: ['https://github.com/timschneiderxyz', 'https://x.com/timschneiderxyz']
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
