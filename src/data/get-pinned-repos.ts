@@ -50,7 +50,8 @@ export const getPinnedRepos = async () => {
           }
         }
       }`
-    })
+    }),
+    next: { revalidate: 86400 }
   });
 
   if (!response.ok) {

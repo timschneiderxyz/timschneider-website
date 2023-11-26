@@ -33,27 +33,19 @@ export const metadata: Metadata = {
   },
   manifest: '/favicons/manifest.webmanifest',
   openGraph: {
-    type: 'website',
-    locale: 'de_DE',
     title: 'Tim Schneider',
     description:
       'Developer Portfolio of Tim Schneider. Creating exceptional websites and optimizing workflows with DevOps expertise.',
     url: 'https://timschneider.xyz',
-    images: [
-      {
-        url: '/favicons/share.png',
-        width: 1200,
-        height: 630
-      }
-    ]
+    type: 'website',
+    locale: 'de_DE'
   },
   twitter: {
-    card: 'summary_large_image',
-    site: '@timschneiderxyz',
     title: 'Tim Schneider',
     description:
       'Developer Portfolio of Tim Schneider. Creating exceptional websites and optimizing workflows with DevOps expertise.',
-    images: ['/favicons/share.png']
+    site: '@timschneiderxyz',
+    card: 'summary_large_image'
   }
 };
 
