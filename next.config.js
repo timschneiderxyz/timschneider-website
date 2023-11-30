@@ -5,9 +5,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   poweredByHeader: false,
-  typescript: {
-    ignoreBuildErrors: true
-  },
   webpack(config) {
     // Modify the next image loader to ignore *.svg files.
     const nextImageLoader = config.module.rules.find(rule => rule.test?.test?.('.svg'));
