@@ -1,12 +1,17 @@
 {
+  "plugins": [
+    "@stylistic/stylelint-plugin"
+  ],
   "extends": "stylelint-config-standard-scss",
   "rules": {
+    "@stylistic/at-rule-name-space-after": "always",
+    "@stylistic/block-closing-brace-newline-before": "always",
+    "@stylistic/block-opening-brace-newline-after": "always",
+    "@stylistic/indentation": 2,
+    "@stylistic/string-quotes": "single",
     "scss/at-function-pattern": "^[a-z0-9-_]+$",
     "scss/at-mixin-pattern": "^[a-z0-9-_]+$",
     "scss/dollar-variable-pattern": "^[a-z0-9-_]+$",
-    "at-rule-name-space-after": "always",
-    "block-closing-brace-newline-before": "always",
-    "block-opening-brace-newline-after": "always",
     "color-function-notation": null,
     "color-hex-length": "long",
     "color-named": "never",
@@ -18,7 +23,6 @@
     "selector-id-pattern": "^[a-z0-9-_]+$",
     "selector-max-compound-selectors": 5,
     "selector-max-id": 0,
-    "selector-max-specificity": "0,5,0",
-    "string-quotes": "single"
+    "selector-max-specificity": "0,5,0"
   }
 }
