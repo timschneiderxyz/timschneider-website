@@ -3,7 +3,7 @@
     ========================================================================  */
 
 // Data
-import { getPinnedRepos } from '@/data/get-pinned-repos';
+import { getPinnedRepos } from '@/actions/github';
 
 // Components
 import Section from '@/components/Section';

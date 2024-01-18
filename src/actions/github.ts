@@ -1,8 +1,8 @@
 /*  ========================================================================
-    # Data - Get Pinned Repositories
+    # Actions - GitHub
     ========================================================================  */
 
-import 'server-only';
+'use server';
 
 export type Repository = {
   url: string;
@@ -54,9 +54,7 @@ export const getPinnedRepos = async () => {
     next: { revalidate: 86400 }
   });
 
-  if (!response.ok) {
-    throw new Error(await response.text());
-  }
+  if (!response.ok) throw new Error(await response.text());
 
   const repositories = await response.json();
 

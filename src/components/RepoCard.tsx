@@ -7,7 +7,7 @@ import { forwardRef } from 'react';
 import clsx from 'clsx';
 
 // Types
-import type { Repository } from '@/data/get-pinned-repos';
+import type { Repository } from '@/actions/github';
 
 // SVGs
 import IconFolder from '@/svgs/ui/folder.svg';
