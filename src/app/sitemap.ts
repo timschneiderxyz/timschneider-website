@@ -2,7 +2,7 @@
     # Sitemap
     ========================================================================  */
 
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 
 const sitemap = (): MetadataRoute.Sitemap => {
   const routes = [''].map(route => ({

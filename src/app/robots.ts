@@ -2,7 +2,7 @@
     # Robots
     ========================================================================  */
 
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 
 const robots = (): MetadataRoute.Robots => {
   return {
