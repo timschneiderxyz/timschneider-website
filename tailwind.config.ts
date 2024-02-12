@@ -45,7 +45,7 @@ export default {
             '--tw-prose-td-borders': colors.neutral[700],
             h1: {
               fontWeight: defaultTheme.fontWeight.bold,
-              letterSpacing: defaultTheme.letterSpacing.tighter
+              letterSpacing: defaultTheme.letterSpacing.tight
             },
             h2: {
               fontWeight: defaultTheme.fontWeight.bold,
