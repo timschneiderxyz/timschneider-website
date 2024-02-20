@@ -11,7 +11,6 @@ export const size = {
 };
 export const contentType = 'image/png';
 
-// Generation
 const OpenGraphImage = () => {
   return new ImageResponse(
     (
@@ -47,9 +46,7 @@ const OpenGraphImage = () => {
         </svg>
       </div>
     ),
-    {
-      ...size
-    }
+    { ...size }
   );
 };
 

@@ -2,7 +2,7 @@
     # Actions - GitHub
     ========================================================================  */
 
-'use server';
+import 'server-only';
 
 export type Repository = {
   url: string;

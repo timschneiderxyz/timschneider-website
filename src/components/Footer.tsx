@@ -4,19 +4,14 @@
 
 'use client';
 
-// Dependencies
-import { useState } from 'react';
-
-// Components
+import { useModalStore } from '@/stores/modal';
 import Container from '@/components/Container';
 import Modal from '@/components/Modal';
-
-// SVGs
 import IconGitHub from '@/svgs/social/github.svg';
 import IconX from '@/svgs/social/x.svg';
 
 const Footer = ({ ...props }: React.HTMLAttributes<HTMLDivElement>) => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const { open: openModal } = useModalStore();
 
   return (
     <footer {...props}>
@@ -24,7 +19,7 @@ const Footer = ({ ...props }: React.HTMLAttributes<HTMLDivElement>) => {
         <div className='flex justify-between py-10'>
           <button
             className='p-0 bg-transparent border-none text-sm cursor-pointer transition-colors hover:text-white'
-            onClick={() => setModalIsOpen(true)}
+            onClick={() => openModal('Greetings! 👋')}
           >
             © 2022 Tim Schneider
           </button>
@@ -56,9 +51,7 @@ const Footer = ({ ...props }: React.HTMLAttributes<HTMLDivElement>) => {
         </div>
       </Container>
 
-      <Modal isOpen={modalIsOpen} setIsOpen={setModalIsOpen}>
-        Greetings! 👋
-      </Modal>
+      <Modal />
     </footer>
   );
 };

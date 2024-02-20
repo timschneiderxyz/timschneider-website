@@ -2,11 +2,8 @@
     # Not Found
     ========================================================================  */
 
-// Components
 import Container from '@/components/Container';
 import Image from 'next/image';
-
-// Images
 import schmuserkadser from '@/images/schmuserkadser.png';
 
 const NotFound = () => {

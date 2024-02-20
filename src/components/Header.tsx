@@ -2,7 +2,6 @@
     # Components - Header
     ========================================================================  */
 
-// Components
 import Container from '@/components/Container';
 import Link from 'next/link';
 
