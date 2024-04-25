@@ -2,7 +2,7 @@
     # Components - Repository Card
     ========================================================================  */
 
-import type { Repository } from '@/actions/github';
+import type { Repository } from '@/data/github';
 import clsx from 'clsx';
 import IconFolder from '@/svgs/ui/folder.svg';
 import IconExternalLink from '@/svgs/ui/external-link.svg';
@@ -13,9 +13,9 @@ const RepoCard = ({
   repo,
   className,
   ...props
-}: React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+}: {
   repo: Repository;
-}) => {
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
     <a
       className={clsx(
