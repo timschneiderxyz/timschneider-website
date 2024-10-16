@@ -50,7 +50,8 @@ export const getPinnedRepos = async () => {
           }
         }
       }`
-    })
+    }),
+    next: { revalidate: 43200 }
   });
 
   if (!response.ok) throw new Error(await response.text());

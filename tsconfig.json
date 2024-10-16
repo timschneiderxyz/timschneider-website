@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "module": "esnext",
+    "module": "Preserve",
     "moduleResolution": "bundler",
+    "moduleDetection": "force",
     "target": "esnext",
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": false,
     "resolveJsonModule": true,
     "jsx": "preserve",
     "strict": true,
@@ -15,6 +16,7 @@
     "isolatedModules": true,
     "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
     "lib": [
       "dom",
       "dom.iterable",

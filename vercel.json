@@ -2,23 +2,28 @@
   "redirects": [
     {
       "source": "/github",
-      "destination": "https://github.com/timschneiderxyz"
+      "destination": "https://github.com/timschneiderxyz",
+      "statusCode": 301
     },
     {
       "source": "/gh",
-      "destination": "https://github.com/timschneiderxyz"
+      "destination": "https://github.com/timschneiderxyz",
+      "statusCode": 301
     },
     {
       "source": "/twitter",
-      "destination": "https://twitter.com/timschneiderxyz"
+      "destination": "https://twitter.com/timschneiderxyz",
+      "statusCode": 301
     },
     {
       "source": "/x",
-      "destination": "https://x.com/timschneiderxyz"
+      "destination": "https://x.com/timschneiderxyz",
+      "statusCode": 301
     },
     {
       "source": "/scripts/fywin",
-      "destination": "https://raw.githubusercontent.com/timschneiderxyz/fyWin/main/fyWin.ps1"
+      "destination": "https://raw.githubusercontent.com/timschneiderxyz/fyWin/main/fyWin.ps1",
+      "statusCode": 301
     }
   ]
 }
